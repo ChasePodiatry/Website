@@ -1,4 +1,74 @@
-@import "variables";
+@import "settings";
 @import "~foundation-sites/scss/foundation";
 
 @include foundation-everything;
+
+.header {
+  a {
+    color: $light-gray;
+  }
+
+  .menu li {
+    a {
+      padding: 2.5rem 0.5rem;
+      height: $topbar-item-height;
+    }
+
+    &:not(.is-dropdown-submenu-parent):after {
+      content: " ";
+      position: absolute;
+      bottom: -0.2rem;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background: $light-gray;
+      opacity: 0;
+      transition: all 0.5s;
+    }
+
+    &:hover:after {
+      opacity: 1;
+    }
+  }
+
+  .brand-logo {
+    position: relative;
+    height: inherit;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+
+    img {
+      height: 5rem;
+      padding: 0.5rem;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align:  middle;
+
+      small {
+        color: $medium-gray;
+      }
+    }
+
+    &:after {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: map-get($breakpoints, "xxlarge") * 2;
+      height: 1px;
+      background: $light-gray;
+      opacity: 1;
+    }
+  }
+
+  &.fill {
+    background: #222;
+
+    .brand-logo:after {
+      opacity: 0;
+    }
+  }
+}

@@ -124,9 +124,10 @@ gulp.task('clean', [
 gulp.task('build', function (callback) {
     runSequence('clean',
         [
-        'build:vendor:scripts',
-        'build:scripts',
-        'build:styles'
+            'build:vendor:scripts',
+            'build:scripts',
+            'build:styles',
+            'build:images',
         ],
         'build:jekyll',
         callback);
