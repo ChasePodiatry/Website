@@ -1,18 +1,16 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Who are we?
+Chase Podiatry & Chiropdoy is a small Podiatry/Chiropody clinic based in Cannock and Burntwood dedicated to providing all foot care needs from simple nail cutting, hard skin and corn removal to biomechanics (foot function) and surgical options to customers throughout Cannock and the surrounding area.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Unlike many practices, all of our practitioners are registered with the the [Health and Care Professions Council](https://www.hcpc-uk.org/) and [The Society of Chiropodist & Podiatrist](https://www.scpod.org/). 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Contact Us
 
-
-[jekyll-organization]: https://github.com/jekyll
+&nbsp;  | **Cannock**                                                                | **Bunrtwood**
+Phone   | [01543 577566](tel:01543577566)                                            | [01543 648980](tel:01543648980)     
+Email   | [reception@chase-podiatry.co.uk](mailto:reception@chase-podiatry.co.uk)    | [reception@burntwoodhealthhub.co.uk](mailto:reception@burntwoodhealthhub.co.uk)
+Address | 10 Mill Street <br/> Cannock <br/> WS11 0DL                                | 5 Swan Corner Shopping Precinct <br/> Chase Road <br/> Burntwood <br/> WS70DW
