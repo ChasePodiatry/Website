@@ -38,7 +38,7 @@ gulp.task('build:scripts', function () {
 gulp.task('build:vendor:scripts', function () {
     return gulp.src(paths.vendorJsFilesGlob)
         .pipe(babel({
-            presets: ['env']
+            presets: ['env', 'es2015']
         }))
         .pipe(concat('vendor.js'))
         .pipe(uglify())

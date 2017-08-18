@@ -1,22 +1,26 @@
 <header class="header {% unless page.cover or layout.cover %} fill {% endunless %}" role="banner">
-    <div class="grid-container">
-        <div class="title-bar hide-for-medium" data-responsive-toggle="top-menu">
-            <button class="menu-icon" type="button" data-toggle></button>
-            <div class="title-bar-title">Menu</div>
-        </div>
+    <div class="title-bar grid-x" data-responsive-toggle="main-menu" data-hide-for="medium">
+            <div class="title-bar-title cell auto">
+                <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+            </div>
+            <div class="cell shrink align-right">
+                <button class="menu-icon" type="button" data-toggle></button>
+            </div>
+    </div>
 
-        <div class="top-bar">
-            <div class="top-bar-left">
+    <div class="grid-container">
+        <div class="top-bar" id="main-menu">
+            <div class="top-bar-left show-for-medium">
                 <a class="brand-logo" href="{{ '/' | relative_url }}">
                     <img src="{{ '/assets/img/logo.svg' | relative_url }}"/>
                     <span>
                         {{site.title}}<br/>
-                        <small>For all your footcare needs</small>
+                        <small>{{ site.slogan }}</small>
                     </span>
                 </a>
             </div>
             <div class="top-bar-right">
-                <ul class="dropdown menu" data-dropdown-menu>
+                <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
                     <li>
                         <a href="{{'/about/' | relative_url}}">About</a>
                     </li>

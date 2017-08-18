@@ -31,9 +31,9 @@
 // global headers
 // with additional styling for with/without cover image
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+  background: $topbar-background;
 
   a {
     color: $light-gray;
@@ -92,16 +92,35 @@
       width: map-get($breakpoints, "xxlarge") * 2;
       height: 1px;
       background: $light-gray;
+      opacity: 0;
+    }
+  }
+
+}
+@include breakpoint(medium) {
+  .header:not(.fill) {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+
+    .brand-logo:after {
       opacity: 1;
     }
   }
 
-  &.fill {
-    position: relative;
-    background: #222;
+  .top-bar, .top-bar ul {
+    background: none;
+  }
+}
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
 
-    .brand-logo:after {
-      opacity: 0;
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
     }
   }
 }
