@@ -27,9 +27,12 @@ phone: 01543 577566
 
 # Build settings
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 #theme: minima
 #plugins:
 #  - jekyll-feed
+permalink: pretty
 
 sass:
   load_paths:

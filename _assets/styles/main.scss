@@ -5,31 +5,6 @@
 
 @import "pages";
 
-// typography
-.h1 {
-  @extend h1
-}
-
-.h2 {
-  @extend h2
-}
-
-.h3 {
-  @extend h3
-}
-
-.h4 {
-  @extend h4
-}
-
-.h5 {
-  @extend h5
-}
-
-.h6 {
-  @extend h6
-}
-
 // global headers
 // with additional styling for with/without cover image
 .header {
@@ -127,19 +102,26 @@
   }
 }
 
-// cover image
-.cover {
-  background-size: cover;
-  background-position: center;
-  min-height: 40rem;
-  height: 45vh;
-  color: lighten($light-gray, 20%);
+// general content
+.page-header {
+  background-color: $chase-blue;
+  color: $white;
+  padding: 2rem;
+  margin-bottom: 2rem;
 
-  .standout {
-    padding-top: 25rem;
-  }
+  &:not(.fill) {
+    background-size: cover;
+    background-position: center;
+    min-height: 40rem;
+    height: 45vh;
+    color: lighten($light-gray, 20%);
 
-  .button {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    .standout {
+      padding-top: 25rem;
+    }
+
+    .button {
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
   }
 }
