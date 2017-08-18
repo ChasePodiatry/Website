@@ -33,7 +33,9 @@ body {
     filter: 2px 2px 5px $black;
   }
 
-  .menu li {
+  .menu > li {
+    position: relative;
+
     a {
       padding: 2.5rem 0.5rem;
       height: $topbar-item-height;
@@ -59,15 +61,15 @@ body {
   .brand-logo {
     position: relative;
     height: inherit;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-bottom: 2rem;
 
     img {
-      height: 5rem;
-      padding: 0.5rem;
+      height: 4rem;
+      padding: 0.5rem 0.5rem 0.5rem 0;
     }
 
-    span {
+    .brand-text {
       display: inline-block;
       vertical-align: middle;
 
@@ -86,13 +88,22 @@ body {
       background: $light-gray;
       opacity: 0;
     }
+
+    @include breakpoint(large) {
+      font-size: 1.5rem;
+
+      img {
+        height: 5rem;
+      }
+    }
   }
 
 }
+
 @include breakpoint(medium) {
   .header:not(.fill) {
     position: absolute;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
 
     .brand-logo:after {
       opacity: 1;
@@ -103,6 +114,7 @@ body {
     background: none;
   }
 }
+
 .no-js {
   @include breakpoint(small only) {
     .top-bar {

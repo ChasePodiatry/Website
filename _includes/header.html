@@ -13,7 +13,7 @@
             <div class="top-bar-left show-for-medium">
                 <a class="brand-logo" href="{{ '/' | relative_url }}">
                     <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Chase Podiatry & Chiropody Logo"/>
-                    <span>
+                    <span class="brand-text">
                         {{site.title}}<br/>
                         <small>{{ site.slogan }}</small>
                     </span>
@@ -22,7 +22,10 @@
             <div class="top-bar-right">
                 <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
                     <li>
-                        <a href="{{'/about/' | relative_url}}">About</a>
+                        <a href="{% link _pages/about.md %}">About</a>
+                    </li>
+                    <li>
+                        <a href="{% link _pages/biomechanics/index.md %}">Biomechanics</a>
                     </li>
                 </ul>
             </div>
