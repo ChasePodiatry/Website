@@ -1,0 +1,15 @@
+// page specific styling
+
+#home {
+  #hcpc {
+    max-height: 20rem;
+    min-height: 20mm;
+    max-width: 19.6rem;
+    width: auto;
+
+    @include breakpoint(medium) {
+      width: 20vw;
+      height: auto;
+    }
+  }
+}

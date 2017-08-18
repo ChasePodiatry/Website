@@ -3,6 +3,8 @@
 
 @include foundation-everything;
 
+@import "pages";
+
 // typography
 .h1 {
   @extend h1
