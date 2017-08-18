@@ -5,6 +5,21 @@
 
 @import "pages";
 
+body {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  header, footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+}
+
 // global headers
 // with additional styling for with/without cover image
 .header {
