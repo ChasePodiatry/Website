@@ -20,6 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   not just a patient.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.chase-podiatry.co.uk/" # the base hostname & protocol for your site, e.g. http://example.com
+phone: 01543 577566
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
