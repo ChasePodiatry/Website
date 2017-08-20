@@ -4,60 +4,68 @@ cover: /assets/img/waiting-room-cover.jpg
 coverAlt: "Chase Podiatry & Chiropody Waiting Room"
 ---
 
-<div class="page-header cell" style="background-image: url({{page.cover | default: layout.cover}})">
-    <div class="standout">
-        <div class="grid-container">
-            <div class="grid-x">
-                <div class="auto cell"></div>
-                <div class="shrink cell text-center">
-                    <a class="button large" href="tel:{{ site.phone | remove: ' ' }}">Tel: {{ site.phone }}</a>
+<main class="content">
+
+    <div class="page-header cell" style="background-image: url({{page.cover | default: layout.cover}})">
+        <div class="standout">
+            <div class="grid-container">
+                <div class="grid-x">
+                    <div class="auto cell"></div>
+                    <div class="shrink cell text-center">
+                        <a class="button large" href="tel:{{ site.phone | remove: ' ' }}">Tel: {{ site.phone }}</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="grid-container cell">
-    <main class="page-content" id="home">
-        <div class="grid-x">
-            <div class="cell">
-                <div class="media-object stack-for-small">
-                    <div class="media-object-section">
-                        <h2>Why choose us?</h2>
+    <div class="grid-container cell">
+        <main class="page-content" id="home">
+            <div class="grid-x">
+                <div class="cell">
+                    <div class="media-object stack-for-small">
+                        <div class="media-object-section">
+                            <h2>Why choose us?</h2>
 
-                        <p>
-                            Choosing a foot care provider is one of the most important decisions you can make.
-                            Here at Chase Podiatry and Chiropody services we are warm, caring, knowledgeable, accessible
-                            and we
-                            will
-                            always take the time to go over all of your options and treat you as a person, not just a
-                            patient.
-                            This enables individual treatment plans to be implemented with every member of staff
-                            respecting the
-                            clients
-                            decision on treatments to improve their foot health.
-                        </p>
+                            <p>
+                                Choosing a foot care provider is one of the most important decisions you can make.
+                                Here at Chase Podiatry and Chiropody services we are warm, caring, knowledgeable,
+                                accessible
+                                and we
+                                will
+                                always take the time to go over all of your options and treat you as a person, not just
+                                a
+                                patient.
+                                This enables individual treatment plans to be implemented with every member of staff
+                                respecting the
+                                clients
+                                decision on treatments to improve their foot health.
+                            </p>
 
-                        <p>
-                            Each client will be given a complete assessment then provided with up to date
-                            podiatry/chiropody treatments of the highest standard.
-                            All of our Podiatric staff are registered with the
-                            <a href="https://www.hcpc-uk.org/">Health and Care Professions Council</a> and
-                            <a href="https://www.scpod.org/">The Society of Chiropodist & Podiatrist</a>.
-                            All of our Podiatrists are highly trained with various specialities in foot health offering
-                            over 50
-                            years
-                            experience.
-                        </p>
-                    </div>
+                            <p>
+                                Each client will be given a complete assessment then provided with up to date
+                                podiatry/chiropody treatments of the highest standard.
+                                All of our Podiatric staff are registered with the
+                                <a href="https://www.hcpc-uk.org/">Health and Care Professions Council</a> and
+                                <a href="https://www.scpod.org/">The Society of Chiropodist & Podiatrist</a>.
+                                All of our Podiatrists are highly trained with various specialities in foot health
+                                offering
+                                over 50
+                                years
+                                experience.
+                            </p>
+                        </div>
 
-                    <div class="media-object-section align-self-middle text-center">
-                        <a href="https://www.hcpc-uk.org/">
-                            <img src="{{ '/assets/img/hcpc-logo.png' | relative_url }}" alt="HCPC Registered" id="hcpc"/>
-                        </a>
+                        <div class="media-object-section align-self-middle text-center">
+                            <a href="https://www.hcpc-uk.org/">
+                                <img src="{{ '/assets/img/hcpc-logo.png' | relative_url }}" alt="HCPC Registered"
+                                     id="hcpc"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-</div>
+        </main>
+    </div>
+
+</main>
