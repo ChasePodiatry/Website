@@ -9,7 +9,7 @@
     </div>
 
     <div class="grid-container">
-        <div class="top-bar" id="main-menu">
+        <div class="top-bar align-stretch" id="main-menu">
             <div class="top-bar-left show-for-medium">
                 <a class="brand-logo" href="{{ '/' | relative_url }}">
                     <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Chase Podiatry & Chiropody Logo"/>
@@ -22,8 +22,13 @@
             <div class="top-bar-right">
                 <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
                     <li>
-                        <a href="{% link _pages/about/index.md %}">About</a>
+                        <a>About</a>
+                        <ul class="menu vertical">
+                            <li><a href="{% link _pages/about/index.md %}">About Us</a></li>
+                            <li><a href="{% link _pages/about/treatments.md %}">Treatments</a></li>
+                        </ul>
                     </li>
+
                     <li>
                         <a href="{% link _pages/biomechanics/index.md %}">Biomechanics</a>
                     </li>

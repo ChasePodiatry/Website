@@ -27,34 +27,63 @@ body {
   width: 100%;
   background: $topbar-background;
 
-  a {
+  a, a.is-active {
     color: $light-gray;
     font-weight: $global-weight-bold;
     filter: 2px 2px 5px $black;
   }
 
-  .menu > li {
-    position: relative;
-
-    a {
-      padding: 2.5rem 0.5rem;
-      height: $topbar-item-height;
+  .menu {
+    &:not(.submenu) {
+      height: 100%;
     }
 
-    &:not(.is-dropdown-submenu-parent):after {
-      content: " ";
-      position: absolute;
-      bottom: -0.2rem;
-      right: 0;
-      width: 100%;
-      height: 1px;
-      background: lighten($light-gray, 20%);
-      opacity: 0;
-      transition: all 0.5s;
-    }
+    > li {
+      position: relative;
 
-    &:hover:after {
-      opacity: 1;
+      > a {
+        height: 100%;
+        padding-top: ($topbar-item-height - 1rem) / 2;
+
+        @include breakpoint(large) {
+          padding-top: $topbar-item-height / 2;
+        }
+      }
+
+      &:not(.is-dropdown-submenu-parent):after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background: lighten($light-gray, 20%);
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &.is-dropdown-submenu-parent {
+        > a {
+          &:after {
+            border-color: $light-gray transparent transparent transparent !important;
+          }
+        }
+        &.is-active {
+          > a {
+            color: $light-gray;
+          }
+          background: $chase-purple;
+        }
+
+        .submenu {
+          background: $chase-purple;
+          border: 1px solid $chase-purple;
+          padding-bottom: 1px;
+        }
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
     }
   }
 
@@ -110,8 +139,11 @@ body {
     }
   }
 
-  .top-bar, .top-bar ul {
-    background: none;
+  .top-bar {
+    padding: 0;
+    &, .menu:not(.submenu) {
+      background: none;
+    }
   }
 }
 
