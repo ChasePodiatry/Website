@@ -115,7 +115,8 @@ gulp.task('clean:jekyll', function (callback) {
 
 // run html test
 gulp.task('test:htmltest', function() {
-    var shellCommand = (gutil.env.CONTEXT | 'dev') === 'dev' ? 'vendor/htmltest' : 'htmltest';
+    console.log(gutil.env);
+    var shellCommand = "COMMIT_REF" in process.env ? 'vendor/htmltest' : 'htmltest';
 
     return gulp.src('')
         .pipe(run(shellCommand))
