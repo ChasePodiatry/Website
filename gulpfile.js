@@ -115,7 +115,7 @@ gulp.task('clean:jekyll', function (callback) {
 
 // run html test
 gulp.task('test:htmltest', function() {
-    var shellCommand = (gutil.env.CONTEXT || 'dev') === 'dev' ? 'vendor/htmltest' : 'htmltest';
+    var shellCommand = (gutil.env.CONTEXT | 'dev') === 'dev' ? 'vendor/htmltest' : 'htmltest';
 
     return gulp.src('')
         .pipe(run(shellCommand))
