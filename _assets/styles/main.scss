@@ -165,22 +165,32 @@ body {
 .page-header {
   background-color: $chase-blue;
   color: $white;
-  padding: 2rem;
+  min-height: 2rem;
   margin-bottom: 2rem;
 
   &:not(.fill) {
     background-size: cover;
     background-position: center;
-    min-height: 40rem;
+    min-height: 20rem;
     height: 45vh;
     color: lighten($light-gray, 20%);
 
-    .standout {
-      padding-top: 20rem;
-    }
-
     .button {
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    .standout {
+      padding-top: $topbar-item-height;
+    }
+  }
+
+  .standout {
+    &, > .grid-y {
+      height: 100%;
+    }
+
+    h1 {
+      padding: 1rem;
     }
   }
 }

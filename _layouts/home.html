@@ -7,20 +7,18 @@ coverAlt: "Chase Podiatry & Chiropody Waiting Room"
 <main class="content">
 
     <div class="page-header cell" style="background-image: url({{page.cover | default: layout.cover}})">
-        <div class="standout">
-            <div class="grid-container">
-                <div class="grid-y">
-                    <div class="cell small-6">
-                        <h1>{{ site.title }}</h1>
-                    </div>
+        <div class="grid-container standout">
+            <div class="grid-y">
+                <div class="cell small-6">
+                    <h1>{{ site.title }}</h1>
+                </div>
 
-                    <div class="cell small-6">
-                        <div class="grid-x">
-                            <div class="auto cell"></div>
-                            <div class="shrink cell text-right">
-                                <a class="button large" href="tel:{{ site.phone | remove: ' ' }}">Tel: {{ site.phone }}</a>
-                                <div class="addthis_native_toolbox"></div>
-                            </div>
+                <div class="cell small-6">
+                    <div class="grid-x">
+                        <div class="auto cell"></div>
+                        <div class="shrink cell text-right">
+                            <a class="button large" href="tel:{{ site.phone | remove: ' ' }}">Tel: {{ site.phone }}</a>
+                            <div class="addthis_native_toolbox"></div>
                         </div>
                     </div>
                 </div>
