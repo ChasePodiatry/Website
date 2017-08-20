@@ -1,5 +1,11 @@
 <script src="{{ '/assets/js/vendor.js' | relative_url }}"></script>
 
 <script>
-        $(document).foundation();
+    $(document).foundation();
 </script>
+
+{% if jekyll.environment == 'production' and site.google_analytics %}
+{% include google-analytics.html %}
+{% endif %}
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51bdc37340eec5bb"></script>
