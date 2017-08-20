@@ -57,10 +57,9 @@ defaults:
 exclude:
  - Gemfile
  - Gemfile.lock
+ - gulpfile.js
  - node_modules
  - package.json
- - vendor/bundle/
- - vendor/cache/
- - vendor/gems/
- - vendor/ruby/
+ - README.md
+ - vendor/
  - yarn.lock
