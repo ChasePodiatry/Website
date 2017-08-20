@@ -42,9 +42,9 @@ sass:
 collections:
   pages:
     output: true
-    permalink: /:name/
+    permalink: /:path/
 
-default:
+defaults:
   - scope:
       path: ""
       type: pages

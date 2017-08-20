@@ -1,12 +1,20 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
 ## Who are we?
 Chase Podiatry & Chiropdoy is a small Podiatry/Chiropody clinic based in Cannock and Burntwood dedicated to providing all foot care needs from simple nail cutting, hard skin and corn removal to biomechanics (foot function) and surgical options to customers throughout Cannock and the surrounding area.
 
-Unlike many practices, all of our practitioners are registered with the the [Health and Care Professions Council](https://www.hcpc-uk.org/) and [The Society of Chiropodist & Podiatrist](https://www.scpod.org/). 
+Unlike many practices, all of our practitioners are registered with the the [Health and Care Professions Council](https://www.hcpc-uk.org/) and [The Society of Chiropodist & Podiatrist](https://www.scpod.org/).
+
+### Staff
+
+**Mark Price**  | BSc (hons), FCPod(s) Consultant Podiatric Surgeon
+**Paul Price** | DPodM, MChS, HCPC, Podiatrist
+**Susan Powis** | BSc (hons), MChS, Podiatrist 
+{: .stack }
 
 ## Contact Us
 
