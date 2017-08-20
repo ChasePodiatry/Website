@@ -29,8 +29,9 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
 #theme: minima
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-sitemap
+  - jekyll-last-modified-at
 permalink: pretty
 
 sass:
