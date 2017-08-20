@@ -113,6 +113,15 @@ gulp.task('clean:jekyll', function (callback) {
     callback();
 });
 
+// run html test
+gulp.task('test:htmltest', function() {
+    var shellCommand = (gutil.env.CONTEXT || 'dev') === 'dev' ? 'vendor/htmltest' : 'htmltest';
+
+    return gulp.src('')
+        .pipe(run(shellCommand))
+        .on('error', gutil.log);
+});
+
 gulp.task('clean', [
     'clean:jekyll',
     'clean:images',
@@ -130,6 +139,7 @@ gulp.task('build', function (callback) {
             'build:images',
         ],
         'build:jekyll',
+        'test:htmltest',
         callback);
 });
 

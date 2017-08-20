@@ -19,5 +19,8 @@
     "gulp-util": "^3.0.8",
     "node-sass-tilde-importer": "^1.0.0",
     "run-sequence": "^2.1.0"
+  },
+  "scripts": {
+    "postinstall": "curl -Lks https://github.com/wjdp/htmltest/releases/download/v0.4.1/htmltest-linux -o vendor/htmltest && chmod +x vendor/htmltest"
   }
 }
