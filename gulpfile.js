@@ -93,6 +93,9 @@ gulp.task('clean:images', function(callback) {
 gulp.task('build:jekyll', function () {
     var shellCommand = 'bundle exec jekyll build';
 
+    if (process.env.CONTEXT)
+        shellCommand = 'JEKYLL_ENV="' + process.env.CONTEXT + '" ' + shellCommand;
+
     return gulp.src('')
         .pipe(run(shellCommand))
         .on('error', gutil.log);
@@ -100,7 +103,7 @@ gulp.task('build:jekyll', function () {
 
 // Runs jekyll build command using local config.
 gulp.task('build:jekyll:local', function () {
-    var shellCommand = 'bundle exec jekyll build';
+    var shellCommand = 'bundle exec jekyll build -D';
 
     return gulp.src('')
         .pipe(run(shellCommand))
