@@ -1,0 +1,7 @@
+# Redirects from what the browser requests to what we serve
+/data-protection            /privacy-policy/
+
+# Content remap
+/about/treatment-plans      /about/treatments/
+/biomechanics/gait-anlysis  /biomechanics/
+/biomechanics/orthosis      /biomechanics/
