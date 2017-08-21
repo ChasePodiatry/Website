@@ -53,6 +53,7 @@ defaults:
 
 # Explicitly include in processing
 include:
+ - _headers
  - _redirects
 
 # Exclude from processing.
