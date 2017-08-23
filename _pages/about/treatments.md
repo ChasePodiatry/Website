@@ -1,5 +1,6 @@
 ---
 title: Treatments
+cover: /assets/img/room-1.jpg
 ---
 
 ## Treatment Plans
