@@ -5,7 +5,6 @@ coverAlt: Treatment Room 1
 ---
 
 ## Treatment Plans
-
 We at Chase Podiatry & Chiropody we offer a range of treatment plans, they are listed bellow. Home visits are available by appointment. For more information, or to book an appointment, please [contact us]({% link _pages/about/index.md %}#contact-us) or call [{{site.phone}}](tel:{{site.phone|stripwhitespace}}).
 
 Treatment	                            | Price list
