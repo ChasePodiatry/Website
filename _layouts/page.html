@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="page">
+<article class="page" id="{{page.url | slugify}}">
 
     <header class="page-header {% if page.cover or layout.cover %} parallax-container {% else %} fill {% endif %}">
         {% if page.cover or layout.cover %}
