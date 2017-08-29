@@ -1,7 +1,12 @@
 <script src="{{ '/assets/js/vendor.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 <script>
     $(document).foundation();
+
+    $(document).ready(function() {
+        $('.parallax').parallax();
+    });
 </script>
 
 {% if jekyll.environment == 'production' and site.google_analytics %}

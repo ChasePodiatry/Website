@@ -26,7 +26,7 @@ var paths = require('./_assets/gulp_config/paths');
 gulp.task('build:scripts', function () {
     return gulp.src(paths.jsFilesGlob)
         .pipe(babel({
-            presets: ['env']
+            presets: ['env', 'es2015']
         }))
         .pipe(concat('main.js'))
         .pipe(uglify())

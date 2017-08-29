@@ -3,6 +3,7 @@
 
 @include foundation-everything;
 
+@import "parallax";
 @import "pages";
 
 body {
@@ -26,6 +27,7 @@ body {
   position: relative;
   width: 100%;
   background: $topbar-background;
+  z-index: 100;
 
   a, a.is-active {
     color: $light-gray;
@@ -169,11 +171,10 @@ body {
   margin-bottom: 2rem;
 
   &:not(.fill) {
-    background-size: cover;
-    background-position: center;
     min-height: 20rem;
     height: 45vh;
     color: lighten($light-gray, 20%);
+    background-color: transparent;
 
     .button {
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
@@ -192,5 +193,9 @@ body {
     h1 {
       padding: 1rem;
     }
+  }
+
+  .parallax {
+    background-color: $chase-blue;
   }
 }
