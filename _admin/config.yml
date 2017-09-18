@@ -23,24 +23,26 @@ collections: # A list of collections the CMS should be able to edit
     folder: "_pages/about"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string",  pattern: [".{10,}", "Should have more than 10 characters"]}
       - label: "Cover"
         name: "cover"
         widget: "object"
+        required: false,
         fields:
           - {label: "Cover Image", name: "img", widget: "image"}
           - {label: "Cover Image Alt", name: "alt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
   - name: "treatments"
     label: "Treatments"
     folder: "_pages/treatments"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", pattern: [".{10,}", "Should have more than 10 characters"]}
       - label: "Cover"
         name: "cover"
         widget: "object"
+        required: false,
         fields:
           - {label: "Cover Image", name: "img", widget: "image"}
           - {label: "Cover Image Alt", name: "alt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
