@@ -1,7 +1,8 @@
 ---
 title: Ingrown Nail Surgery
-coverImg: /assets/img/nail-surgery.jpg
-coverAlt: Ingrown Nail Surgery
+cover: 
+  img: /assets/img/nail-surgery.jpg
+  alt: Ingrown Nail Surgery
 ---
 
 ## What Is Ingrown Nail Surgery And How Is It Done?

@@ -1,7 +1,8 @@
 ---
 title: Biomechanics
-coverImg: /assets/img/biomechanics-treadmill.jpg
-coverAlt: Biomechcanical assetssment on a treadmill
+cover: 
+  img: /assets/img/biomechanics-treadmill.jpg
+  alt: Biomechcanical assetssment on a treadmill
 ---
 
 Podiatric biomechanics involves not only the assessment of the structure, alignment and function of the feet and legs but also the whole body. The foot is the only part of the human body and is completley unique to allow us to walk upright. Through a series of complex joints and muscle function it has adapted to walk on alomst any surface from rough uneven ground to flat hard smooth surfaces. However, this hard flat surface causes a low grade repititive movement that subjects the body to many forces that cause injury.

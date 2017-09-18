@@ -1,7 +1,8 @@
 ---
 title: Routine Chiropody
-coverImg: /assets/img/footcare.jpg
-coverAlt: Routine Footcare
+cover: 
+  img: /assets/img/footcare.jpg
+  alt: Routine Footcare
 ---
 
 ## Corns and Calluses

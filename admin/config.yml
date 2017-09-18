@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: ChasePodiatry/Website # Gulp will replace this with your GitHub repository
-  branch: master # Branch to update (master by default)
+  publish_mode: editorial_workflow
 
 media_folder: "_assets/img" # Folder where user uploaded files should go
 public_folder: "/assets/img"
@@ -27,8 +27,8 @@ collections: # A list of collections the CMS should be able to edit
         name: "cover"
         widget: "object"
         fields:
-          - {label: "Cover Image", name: "coverImg", widget: "image"}
-          - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
+          - {label: "Cover Image", name: "img", widget: "image"}
+          - {label: "Cover Image Alt", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "treatments"
     label: "Treatments"
@@ -40,6 +40,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "cover"
         widget: "object"
         fields:
-          - {label: "Cover Image", name: "coverImg", widget: "image"}
-          - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
+          - {label: "Cover Image", name: "img", widget: "image"}
+          - {label: "Cover Image Alt", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
