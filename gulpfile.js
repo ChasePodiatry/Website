@@ -4,6 +4,7 @@
 var autoprefixer = require('autoprefixer');
 var babel        = require('gulp-babel');
 var browserSync  = require('browser-sync').create();
+var cp           = require("child_process");
 var cleancss     = require('gulp-clean-css');
 var concat       = require('gulp-concat');
 var del          = require('del');
@@ -13,6 +14,7 @@ var imagemin     = require('gulp-imagemin');
 // var notify       = require('gulp-notify');
 var postcss      = require('gulp-postcss');
 // var rename       = require('gulp-rename');
+var replace      = require("gulp-replace");
 var run          = require('gulp-run');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
@@ -116,6 +118,22 @@ gulp.task('clean:jekyll', function (callback) {
     callback();
 });
 
+// CMS related things
+gulp.task('build:cms', function() {
+    const remote = process.env.REPOSITORY_URL ? process.env.REPOSITORY_URL : cp.execSync("git remote -v", {encoding: "utf-8"});
+    var repo = null;
+    remote.replace(/github.com[:/](\S+)(\.git)?/, function(_, m) {
+        repo = m.replace(/\.git$/, "");
+    });
+
+    const branch = process.env.BRANCH ? process.env.BRANCH : cp.execSync("git rev-parse --abbrev-ref HEAD", {encoding: "utf-8"});
+
+    return gulp.src(paths.jekyllAdminFilesglob)
+        .pipe(replace("<% GITHUB_REPOSITORY %>", repo))
+        .pipe(replace("<% GIT_BRANCH %>", branch))
+        .pipe(gulp.dest(paths.siteAdminFiles));
+});
+
 // run html test
 gulp.task('test:htmltest', function() {
     console.log(gutil.env);
@@ -143,6 +161,7 @@ gulp.task('build', function (callback) {
             'build:images',
         ],
         'build:jekyll',
+        'build:cms',
         'test:htmltest',
         callback);
 });
@@ -202,8 +221,8 @@ gulp.task('serve', ['build'], function() {
     // Watch data files.
     gulp.watch('_data/**.*+(yml|yaml|csv|json)', ['build:jekyll:watch']);
 
-    // Watch admin CMS
-    gulp.watch('admin/**.*+(yml|html)', ['build:jekyll:watch']),
+    // Watch _admin CMS
+    gulp.watch('_admin/**.*+(yml|html)', ['build:cms']),
 
     // Watch favicon.png.
     gulp.watch('favicon.png', ['build:jekyll:watch']);

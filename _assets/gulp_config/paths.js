@@ -17,6 +17,7 @@ paths.fontFolderName   = 'fonts';
 paths.imageFolderName  = 'img';
 paths.scriptFolderName = 'js';
 paths.stylesFolderName = 'styles';
+paths.adminFolderName  = 'admin';
 
 // Asset files locations.
 paths.sassFiles   = paths.assetsDir + paths.stylesFolderName;
@@ -31,12 +32,14 @@ paths.jekyllCssFiles   = paths.jekyllAssetsDir + paths.stylesFolderName;
 paths.jekyllJsFiles    = paths.jekyllAssetsDir + paths.scriptFolderName;
 paths.jekyllImageFiles = paths.jekyllAssetsDir + paths.imageFolderName;
 paths.jekyllFontFiles  = paths.jekyllAssetsDir + paths.fontFolderName;
+paths.jekyllAdminFiles = paths.jekyllDir       + '_' + paths.adminFolderName;
 
 // Site files locations.
 paths.siteCssFiles   = paths.siteAssetsDir + paths.stylesFolderName;
 paths.siteJsFiles    = paths.siteAssetsDir + paths.scriptFolderName;
 paths.siteImageFiles = paths.siteAssetsDir + paths.imageFolderName;
 paths.siteFontFiles  = paths.siteAssetsDir + paths.fontFolderName;
+paths.siteAdminFiles = paths.siteDir       + paths.adminFolderName;
 
 // Glob patterns by file type.
 paths.sassPattern     = '/**/*.scss';
@@ -45,6 +48,7 @@ paths.imagePattern    = '/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|ico|ICO|svg|SVG|gif|G
 paths.markdownPattern = '/**/*.+(md|MD|markdown|MARKDOWN)';
 paths.htmlPattern     = '/**/*.html';
 paths.xmlPattern      = '/**/*.xml';
+paths.adminPattern    = '/**/*.+(html|yml)';
 
 // Asset files globs
 paths.sassFilesGlob  = paths.sassFiles  + paths.sassPattern;
@@ -61,6 +65,7 @@ paths.jekyllDraftFilesGlob = paths.jekyllDraftFiles + paths.markdownPattern;
 paths.jekyllHtmlFilesGlob  = paths.jekyllDir        + paths.htmlPattern;
 paths.jekyllXmlFilesGlob   = paths.jekyllDir        + paths.xmlPattern;
 paths.jekyllImageFilesGlob = paths.jekyllImageFiles + paths.imagePattern;
+paths.jekyllAdminFilesglob = paths.jekyllAdminFiles + paths.adminPattern;
 
 // Site files globs
 paths.siteHtmlFilesGlob = paths.siteDir + paths.htmlPattern;
