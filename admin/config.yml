@@ -17,9 +17,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "pages"
-    label: "Pages"
-    folder: "_pages"
+  - name: "about"
+    label: "About"
+    folder: "_pages/about"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "cover", widget: "image"}
+      - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "treatments"
+    label: "Treatments"
+    folder: "_pages/treatments"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
