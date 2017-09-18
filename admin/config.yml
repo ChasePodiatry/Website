@@ -23,8 +23,12 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Cover Image", name: "cover", widget: "image"}
-      - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
+      - label: "Cover"
+        name: "cover"
+        widget: "object"
+        fields:
+          - {label: "Cover Image", name: "cover", widget: "image"}
+          - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "treatments"
     label: "Treatments"
@@ -32,6 +36,10 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Cover Image", name: "cover", widget: "image"}
-      - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
+      - label: "Cover"
+        name: "cover"
+        widget: "object"
+        fields:
+          - {label: "Cover Image", name: "cover", widget: "image"}
+          - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
