@@ -19,10 +19,10 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Cover"
         name: "cover"
         widget: "object"
-        required: false,
+        optional: true,
         fields:
-          - {label: "Cover Image", name: "img", widget: "image", required: false}
-          - {label: "Cover Image Alt", name: "alt", widget: "string", required: false}
+          - {label: "Cover Image", name: "img", widget: "image", optional: true}
+          - {label: "Cover Image Alt", name: "alt", widget: "string", optional: true}
       - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
   - name: "about"
     label: "About"
@@ -33,10 +33,10 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Cover"
         name: "cover"
         widget: "object"
-        required: false,
+        optional: true,
         fields:
-          - {label: "Cover Image", name: "img", widget: "image", required: false}
-          - {label: "Cover Image Alt", name: "alt", widget: "string", required: false}
+          - {label: "Cover Image", name: "img", widget: "image", optional: true}
+          - {label: "Cover Image Alt", name: "alt", widget: "string", optional: true}
       - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
   - name: "treatments"
     label: "Treatments"
@@ -47,8 +47,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Cover"
         name: "cover"
         widget: "object"
-        required: false,
+        optional: true,
         fields:
-          - {label: "Cover Image", name: "img", widget: "image", required: false}
-          - {label: "Cover Image Alt", name: "alt", widget: "string", required: false}
+          - {label: "Cover Image", name: "img", widget: "image", optional: true}
+          - {label: "Cover Image Alt", name: "alt", widget: "string", optional: true}
       - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
