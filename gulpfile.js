@@ -202,6 +202,9 @@ gulp.task('serve', ['build'], function() {
     // Watch data files.
     gulp.watch('_data/**.*+(yml|yaml|csv|json)', ['build:jekyll:watch']);
 
+    // Watch admin CMS
+    gulp.watch('admin/**.*+(yml|html)', ['build:jekyll:watch']),
+
     // Watch favicon.png.
     gulp.watch('favicon.png', ['build:jekyll:watch']);
 });
