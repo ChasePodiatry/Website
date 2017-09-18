@@ -13,24 +13,30 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", pattern: [".{10,}", "Should have more than 10 characters"]}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "about"
-    label: "About"
-    folder: "_pages/about"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string",  pattern: [".{10,}", "Should have more than 10 characters"]}
       - label: "Cover"
         name: "cover"
         widget: "object"
         required: false,
         fields:
-          - {label: "Cover Image", name: "img", widget: "image"}
-          - {label: "Cover Image Alt", name: "alt", widget: "string"}
+          - {label: "Cover Image", name: "img", widget: "image", required: false}
+          - {label: "Cover Image Alt", name: "alt", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
+  - name: "about"
+    label: "About"
+    folder: "_pages/about"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - label: "Cover"
+        name: "cover"
+        widget: "object"
+        required: false,
+        fields:
+          - {label: "Cover Image", name: "img", widget: "image", required: false}
+          - {label: "Cover Image Alt", name: "alt", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
   - name: "treatments"
     label: "Treatments"
@@ -43,6 +49,6 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         required: false,
         fields:
-          - {label: "Cover Image", name: "img", widget: "image"}
-          - {label: "Cover Image Alt", name: "alt", widget: "string"}
+          - {label: "Cover Image", name: "img", widget: "image", required: false}
+          - {label: "Cover Image Alt", name: "alt", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", pattern: [".{50,}", "Should have more than 50 characters"]}
