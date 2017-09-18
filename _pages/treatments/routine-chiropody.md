@@ -1,6 +1,6 @@
 ---
 title: Routine Chiropody
-cover: /assets/img/footcare.jpg
+coverImg: /assets/img/footcare.jpg
 coverAlt: Routine Footcare
 ---
 

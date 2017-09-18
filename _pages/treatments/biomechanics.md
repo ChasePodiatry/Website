@@ -1,6 +1,6 @@
 ---
 title: Biomechanics
-cover: /assets/img/biomechanics-treadmill.jpg
+coverImg: /assets/img/biomechanics-treadmill.jpg
 coverAlt: Biomechcanical assetssment on a treadmill
 ---
 

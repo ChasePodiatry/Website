@@ -6,7 +6,7 @@ layout: default
     <header class="page-header {% if page.cover or layout.cover %} parallax-container {% else %} fill {% endif %}">
         {% if page.cover or layout.cover %}
             <div class="parallax">
-                <img src="{{ page.cover | default: layout.cover }}" alt="{{ page.coverAlt | default: layout.coverAlt }}"/>
+                <img src="{{ page.coverImg | default: layout.coverImg }}" alt="{{ page.coverAlt | default: layout.coverAlt }}"/>
             </div>
         {% endif %}
         <div class="grid-container standout">

@@ -1,6 +1,6 @@
 ---
 title: Treatment Plans
-cover: /assets/img/room-1.jpg
+coverImg: /assets/img/room-1.jpg
 coverAlt: Treatment Room 1
 ---
 

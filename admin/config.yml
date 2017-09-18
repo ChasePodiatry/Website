@@ -27,7 +27,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "cover"
         widget: "object"
         fields:
-          - {label: "Cover Image", name: "cover", widget: "image"}
+          - {label: "Cover Image", name: "coverImg", widget: "image"}
           - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "treatments"
@@ -40,6 +40,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "cover"
         widget: "object"
         fields:
-          - {label: "Cover Image", name: "cover", widget: "image"}
+          - {label: "Cover Image", name: "coverImg", widget: "image"}
           - {label: "Cover Image Alt", name: "coverAlt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

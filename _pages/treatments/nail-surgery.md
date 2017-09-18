@@ -1,6 +1,6 @@
 ---
 title: Ingrown Nail Surgery
-cover: /assets/img/nail-surgery.jpg
+coverImg: /assets/img/nail-surgery.jpg
 coverAlt: Ingrown Nail Surgery
 ---
 
