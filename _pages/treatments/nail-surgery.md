@@ -1,22 +1,22 @@
 ---
-title: Ingrown Nail Surgery
+title: Nail Surgery
 cover: /assets/img/nail-surgery.jpg
-coverAlt: Ingrown Nail Surgery
+coverAlt: Nail Surgery
 ---
 
-## What Is Ingrown Nail Surgery And How Is It Done?
-At Chase Podiatry & Chiropody we will try to clear the ingrowing toe nail using simple painless clinical techniques, and provide antibiotics if necessary, but sometimes this is not possible and our preferred procedure would be a partial nail excision and chemical matrixectomy done under local anaesthetic. 
+## What Is Nail Surgery And How Is It Done?
+At Chase Podiatry & Chiropody, we can clear the ingrown or damaged nail using a simple and painless clinical technique. If this is not possible we can perform a partial or total nail excision with chemical matrixectomy under local anaesthetic. Antibiotics can be provided from stock or by private prescription.
 This has been shown through research to be the most reliable form of procedure to reduce the risk of recurrence caused by a regrowth of the nail. Nail surgery is generally very safe, with very minimal pain afterwards, and can be safely performed in an office based clinical setting.
 
 The procedure involves removal of the outer edge of the nail, with the nail root (matrix), and treatment of the area where the nail root is located with an acid (phenol) to destroy the cells which are responsible for nail growth. 
-It is done under a local anaesthetic ring block which completely removes all pain sensation in the toe (temporary). Cosmetically, the nail plate may look slightly narrower once fully healed.
+It is done under a local anaesthetic ring block which completely removes all pain sensation in the toe (temporary). Cosmetically, the nail plate may look slightly narrower once fully healed but perfectly normal.
 
 After the procedure, you will be sent home with the toe bandaged and an instruction leaflet on what to do (pain medications, elevation, rest, keep dry, etc). 
 Typically, we will review you within a couple of days and change the dressing, and then given you instructions on self management of the toe (changing dressings) over the coming weeks. 
 We will then review the toe again at about 4-6 weeks to make sure it is healing properly. This is all included in the cost.
 
 ## Who is suited to having ingrown toenail surgery?
-Most sufferers of chronic ingrown toenails will be suitable for the procedure and there are very cases where surgery cannot be offered. All instruments are fully sterilised with a fully compliant sterilisation process.
+Most sufferers of chronic ingrown toenails will be suitable for the procedure and there are very few cases where surgery cannot be offered. All instruments are fully sterilised with a fully compliant sterilisation process.
  
 ## What are the benefits and risks?
 

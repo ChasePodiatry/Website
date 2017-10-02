@@ -5,15 +5,14 @@ coverAlt: Routine Footcare
 ---
 
 ## Corns and Calluses
-Feet corns and callus can be extremely painful and are caused by the thickening of the skin on the foot that becomes painful. 
-They are caused by excessive pressure or friction (rubbing) on the skin.
+Corns and calluses on the feet can be extremely painful and are caused by excessive pressure or friction (rubbing) of the skin which changes the way skin cells grow and results in the thickening of the outer layers of the skin.
 
-Feet corns and calluses can be painlessly removed and advice can be given to prevent further recurrences.
+Corns and calluses can be painlessly removed and advice can be given to prevent further recurrences.
 
-> “After treatment feel like you are walking on air”
+> “After treatment you will feel like you are walking on air”
 
 A corn is a small area of skin which has become thickened due to pressure on it, they are often very painful. A corn is normally round in shape and presses into the deeper layers of the skin. There are two types of corns, hard and soft. Hard corns form on the tops of the toes or over any bony areas. Soft corns form in between the toes and are equally painful.
-Callus tends to be larger, broader and has less defined edge than a corn. They commonly form on the underside of the foot and over bony areas.
+Callus tends to be larger, broader and has less defined edges than a corn. They commonly form on the underside of the foot and over bony areas.
 
 ### Common corn/ callus causes
 
