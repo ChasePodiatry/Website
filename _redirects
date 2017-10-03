@@ -2,6 +2,6 @@
 /data-protection            /privacy-policy/
 
 # Content remap
-/about/treatment-plans      /about/treatments/
+/about/treatments/          /about/treatments-plans/
 /biomechanics/gait-anlysis  /biomechanics/
 /biomechanics/orthosis      /biomechanics/
