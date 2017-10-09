@@ -17,6 +17,7 @@ var run          = require('gulp-run');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sassImporter = require('node-sass-tilde-importer');
+var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 
 // Include paths file.
@@ -25,11 +26,13 @@ var paths = require('./_assets/gulp_config/paths');
 // Process JS
 gulp.task('build:scripts', function () {
     return gulp.src(paths.jsFilesGlob)
+        .pipe(sourcemaps.init())
         .pipe(babel({
             presets: ['env', 'es2015']
         }))
         .pipe(concat('main.js'))
         .pipe(uglify())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.jekyllJsFiles))
         .pipe(gulp.dest(paths.siteJsFiles))
         .on('error', gutil.log);
@@ -57,9 +60,11 @@ gulp.task('clean:scripts', function(callback) {
 // outputs file to the appropriate location.
 gulp.task('build:styles', function() {
     return gulp.src(paths.sassFilesGlob)
+        .pipe(sourcemaps.init())
         .pipe(sass({importer: sassImporter}).on('error', sass.logError))
         .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
         .pipe(cleancss())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.jekyllCssFiles))
         .pipe(gulp.dest(paths.siteCssFiles))
         .pipe(browserSync.stream())
