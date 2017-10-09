@@ -14,8 +14,8 @@ if(typeof ga === "function") {
             ga('send', {
                 hitType: 'event',
                 eventCategory: "Contact",
-                eventAction: "tel",
-                eventValue: this.href.replace(/^tel:/, ''),
+                eventAction: "mailto",
+                eventValue: this.href.replace(/^mailto:/, ''),
                 eventLabel: this.dataset.galabel
             });
         });
