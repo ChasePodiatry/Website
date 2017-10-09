@@ -32,7 +32,7 @@ gulp.task('build:scripts', function () {
         }))
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.jekyllJsFiles))
         .pipe(gulp.dest(paths.siteJsFiles))
         .on('error', gutil.log);
@@ -64,7 +64,7 @@ gulp.task('build:styles', function() {
         .pipe(sass({importer: sassImporter}).on('error', sass.logError))
         .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
         .pipe(cleancss())
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.jekyllCssFiles))
         .pipe(gulp.dest(paths.siteCssFiles))
         .pipe(browserSync.stream())
