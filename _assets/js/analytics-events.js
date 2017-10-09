@@ -5,8 +5,7 @@ if(typeof ga === "function") {
                 hitType: 'event',
                 eventCategory: "Contact",
                 eventAction: "tel",
-                eventValue: this.href.replace(/^tel:/, ''),
-                eventLabel: this.dataset.galabel
+                eventLabel: this.href.replace(/^tel:/, '')
             });
         });
 
@@ -15,8 +14,7 @@ if(typeof ga === "function") {
                 hitType: 'event',
                 eventCategory: "Contact",
                 eventAction: "mailto",
-                eventValue: this.href.replace(/^mailto:/, ''),
-                eventLabel: this.dataset.galabel
+                eventLabel: this.href.replace(/^mailto:/, '')
             });
         });
     });
