@@ -22,7 +22,7 @@ Unlike many practices, all of our practitioners are registered with the the [Hea
 &nbsp;          | Phone                             | Email                                                                             | Address
 ----------------|-----------------------------------|-----------------------------------------------------------------------------------|---------
 **Cannock**     | [01543 577566](tel:01543577566)   | [reception@chase-podiatry.co.uk](mailto:reception@chase-podiatry.co.uk)           | 10 Mill Street <br/> Cannock <br/> WS11 0DL
-**Burntwood**   | [01543 648980](tel:01543648980)   | [reception@burntwoodhealthhub.co.uk](mailto:reception@burntwoodhealthhub.co.uk)   | 5 Swan Corner Shopping Precinct <br/> Chase Road <br/> Burntwood <br/> WS70DW
+**Burntwood**   | [01543 684980](tel:01543684980)   | [reception@burntwoodhealthhub.co.uk](mailto:reception@burntwoodhealthhub.co.uk)   | 5 Swan Corner Shopping Precinct <br/> Chase Road <br/> Burntwood <br/> WS70DW
 {: .stack }
 
 ### Social Media
