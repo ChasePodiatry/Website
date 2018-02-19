@@ -30,11 +30,19 @@ To do so we embed code that they provide and we do not control ourselves. To fun
 AddThis and social networks therefore could know that you’re viewing this website, if you use their services (that isn’t to say they do, but their policies may change). You can learn more about [AddThis](http://www.addthis.com/privacy).
 
 ## If you choose to visit on of our practices
-When you choose to visit on of our practices we are required to collect and store some personal identifiable information about you, such as your name, date of birth, contact details, and address.
+When you choose to visit on of our practices we are required to collect and store some personal identifiable information about you, such as your name, date of birth, contact details, and address. This enables us to provide medical treatment and advice.
 
-We will also need to keep a brief medical history for you, as well as a record of any treatments we provide. It is a legal requirement that we keep these records for a minimum of 7 years following your treatment.
+We will also need to keep a brief medical history for you, as well as a record of any treatments we provide.
 
-You will be asked to provide this information on your first appointment, and our staff will be happy to answer any questions you may have.
+You will be asked to provide this information on your first appointment, and our staff will be happy to answer any questions you may have. 
+We are required to keep this information for 8 years following the completion of treatment in adults. For childre, the information is retained until the patients 25th birthday, or 26th birthday if the patient was 17 at the conclusion of treatment.
+
+## Data sharing
+In order to help us in the provision of our services, we may be required on occasion to share personal information with trusted third parties. This may include the following people:
+
+* General Practitioner - we may need to update your GP on your medical condition
+* Other Health Professional - if you need to be referred to another Health Professional, we may need to provide them information of previous treatments. This will be discussed with you prior to information being shared.
+* Health Insurance Company - if you have health insurance, they will be notified of treatment via an invoice. 
 
 ## Security
 Chase Podiatry & Chiropody takes many precautions to prevent the loss, misuse or alteration of your personal information. These measures include:
