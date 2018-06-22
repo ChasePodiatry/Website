@@ -49,4 +49,4 @@ The treatment involves a series of 5 injections with 1 week between them.
 It is important that you do not miss any one of the appointments in the series or the treatment must be restarted.
 
 ## We are the only practice in the area to offer this treatment
-Thanks to our highly qualified staff and their skill we are proud to be the only qualified and registered practice in the Cannock and Burntwood areas to offer alcohol injections for Morton's Neuroma.
+Thanks to our highly qualified staff and their skill we are proud to be the only qualified and registered practice in Staffordshire to offer alcohol injections for Morton's Neuroma.
