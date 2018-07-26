@@ -1,5 +1,6 @@
 ---
 title: Alcohol Injections for Morton’s Neuroma
+excerpt: A Morton's Neuroma is a painful sweeling of the nerve in the foot. Chase Podiatry can use alcohol injections to control the swelling and reduce pain.
 ---
 
 A Morton's Neuroma is an enlargement or thickening of a nerve in the foot, usually between the third and fourth or second and third toes. 
