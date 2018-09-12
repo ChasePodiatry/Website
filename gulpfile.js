@@ -2,23 +2,23 @@
 
 // Define variables.
 var autoprefixer = require('autoprefixer');
-var babel        = require('gulp-babel');
-var browserSync  = require('browser-sync').create();
-var cleancss     = require('gulp-clean-css');
-var concat       = require('gulp-concat');
-var del          = require('del');
-var gulp         = require('gulp');
-var gutil        = require('gulp-util');
-var imagemin     = require('gulp-imagemin');
+var babel = require('gulp-babel');
+var browserSync = require('browser-sync').create();
+var cleancss = require('gulp-clean-css');
+var concat = require('gulp-concat');
+var del = require('del');
+var gulp = require('gulp');
+var imagemin = require('gulp-imagemin');
 // var notify       = require('gulp-notify');
-var postcss      = require('gulp-postcss');
+var log = require('fancy-log');
+var postcss = require('gulp-postcss');
 // var rename       = require('gulp-rename');
-var run          = require('gulp-run');
-var runSequence  = require('run-sequence');
-var sass         = require('gulp-sass');
+var run = require('gulp-run');
+var runSequence = require('run-sequence');
+var sass = require('gulp-sass');
 var sassImporter = require('node-sass-tilde-importer');
-var sourcemaps   = require('gulp-sourcemaps');
-var uglify       = require('gulp-uglify');
+var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
 
 // Include paths file.
 var paths = require('./_assets/gulp_config/paths');
@@ -27,52 +27,48 @@ var paths = require('./_assets/gulp_config/paths');
 gulp.task('build:scripts', function () {
     return gulp.src(paths.jsFilesGlob)
         .pipe(sourcemaps.init())
-        .pipe(babel({
-            presets: ['env', 'es2015']
-        }))
+        .pipe(babel())
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.jekyllJsFiles))
         .pipe(gulp.dest(paths.siteJsFiles))
-        .on('error', gutil.log);
+        .on('error', log.error);
 });
 
 gulp.task('build:vendor:scripts', function () {
     return gulp.src(paths.vendorJsFilesGlob)
-        .pipe(babel({
-            presets: ['env', 'es2015']
-        }))
+        .pipe(babel())
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(gulp.dest(paths.jekyllJsFiles))
         .pipe(gulp.dest(paths.siteJsFiles))
-        .on('error', gutil.log);
+        .on('error', log.error);
 });
 
 // Deletes processed JS.
-gulp.task('clean:scripts', function(callback) {
+gulp.task('clean:scripts', function (callback) {
     del([paths.jekyllJsFiles + '**.js', paths.siteJsFiles + '**.js']);
     callback();
 });
 
 // Uses Sass compiler to process styles, adds vendor prefixes, minifies, then
 // outputs file to the appropriate location.
-gulp.task('build:styles', function() {
+gulp.task('build:styles', function (callback) {
     return gulp.src(paths.sassFilesGlob)
         .pipe(sourcemaps.init())
         .pipe(sass({importer: sassImporter}).on('error', sass.logError))
-        .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
+        .pipe(postcss([autoprefixer({browsers: ['last 2 versions']})]))
         .pipe(cleancss())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.jekyllCssFiles))
         .pipe(gulp.dest(paths.siteCssFiles))
         .pipe(browserSync.stream())
-        .on('error', gutil.log);
+        .on('error', log.error);
 });
 
 // Deletes CSS.
-gulp.task('clean:styles', function(callback) {
+gulp.task('clean:styles', function (callback) {
     del([paths.jekyllCssFiles + 'main.css',
         paths.siteCssFiles + 'main.css'
     ]);
@@ -80,7 +76,7 @@ gulp.task('clean:styles', function(callback) {
 });
 
 // Optimizes and copies image files.
-gulp.task('build:images', function() {
+gulp.task('build:images', function () {
     return gulp.src(paths.imageFilesGlob)
         .pipe(imagemin())
         .pipe(gulp.dest(paths.jekyllImageFiles))
@@ -89,7 +85,7 @@ gulp.task('build:images', function() {
 });
 
 // Deletes processed images.
-gulp.task('clean:images', function(callback) {
+gulp.task('clean:images', function (callback) {
     del([paths.jekyllImageFiles, paths.siteImageFiles]);
     callback();
 });
@@ -101,9 +97,9 @@ gulp.task('build:jekyll', function () {
     if (process.env.CONTEXT)
         shellCommand = 'JEKYLL_ENV="' + process.env.CONTEXT + '" ' + shellCommand;
 
-    return gulp.src('')
+    return gulp.src('.')
         .pipe(run(shellCommand))
-        .on('error', gutil.log);
+        .on('error', log.error);
 });
 
 // Runs jekyll build command using local config.
@@ -112,7 +108,7 @@ gulp.task('build:jekyll:local', function () {
 
     return gulp.src('')
         .pipe(run(shellCommand))
-        .on('error', gutil.log);
+        .on('error', log.error);
 });
 
 // Deletes the entire _site directory.
@@ -122,53 +118,49 @@ gulp.task('clean:jekyll', function (callback) {
 });
 
 // run html test
-gulp.task('test:htmltest', function() {
-    console.log(gutil.env);
+gulp.task('test:htmltest', function () {
     var shellCommand = "COMMIT_REF" in process.env ? 'vendor/htmltest' : 'htmltest';
 
-    return gulp.src('')
+    return gulp.src('.')
         .pipe(run(shellCommand))
-        .on('error', gutil.log);
+        .on('error', log.error);
 });
 
-gulp.task('clean', [
+gulp.task('clean', gulp.parallel(
     'clean:jekyll',
     'clean:images',
     'clean:scripts',
     'clean:styles'
-]);
+));
+
+gulp.task('build:assets', gulp.parallel(
+    'build:vendor:scripts',
+    'build:scripts',
+    'build:styles',
+    'build:images'
+));
 
 // builds whole site
-gulp.task('build', function (callback) {
-    runSequence('clean',
-        [
-            'build:vendor:scripts',
-            'build:scripts',
-            'build:styles',
-            'build:images',
-        ],
-        'build:jekyll',
-        'test:htmltest',
-        callback);
-});
+gulp.task('build', gulp.series('clean', 'build:assets', 'build:jekyll', 'test:htmltest'));
 
 // default task: build site
-gulp.task('default', ['build']);
+gulp.task('default', gulp.parallel('build'));
 
 // Special tasks for building and then reloading BrowserSync.
-gulp.task('build:jekyll:watch', ['build:jekyll:local'], function (callback) {
+gulp.task('build:jekyll:watch', gulp.series('build:jekyll:local', function (callback) {
     browserSync.reload();
     callback();
-});
-gulp.task('build:scripts:watch', ['build:scripts'], function (callback) {
+}));
+gulp.task('build:scripts:watch', gulp.series('build:scripts', function (callback) {
     browserSync.reload();
     callback();
-});
+}));
 
 // Static Server + watching files.
 // Note: passing anything besides hard-coded literal paths with globs doesn't
 // seem to work with gulp.watch().
-gulp.task('serve', ['build'], function() {
+gulp.task('serve', gulp.series('build', function () {
+    log('starting serve');
 
     browserSync.init({
         server: paths.siteDir,
@@ -179,34 +171,34 @@ gulp.task('serve', ['build'], function() {
     });
 
     // Watch site settings.
-    gulp.watch(['_config.yml'], ['build:jekyll:watch']);
+    gulp.watch(['_config.yml'], gulp.series('build:jekyll:watch'));
 
     // Watch .scss files; changes are piped to browserSync.
-    gulp.watch('_assets/styles/**/*.scss', ['build:styles']);
+    gulp.watch('_assets/styles/**/*.scss', gulp.series('build:styles'));
 
     // Watch .js files.
-    gulp.watch('_assets/js/**/*.js', ['build:scripts:watch']);
+    gulp.watch('_assets/js/**/*.js', gulp.series('build:scripts:watch'));
 
     // Watch image files; changes are piped to browserSync.
-    gulp.watch('_assets/img/**/*', ['build:images']);
+    gulp.watch('_assets/img/**/*', gulp.series('build:images'));
 
     // Watch posts.
-    gulp.watch('_posts/**/*.+(md|markdown|MD)', ['build:jekyll:watch']);
+    gulp.watch('_posts/**/*.+(md|markdown|MD)', gulp.series('build:jekyll:watch'));
 
     // Watch drafts if --drafts flag was passed.
     if (module.exports.drafts) {
-        gulp.watch('_drafts/*.+(md|markdown|MD)', ['build:jekyll:watch']);
+        gulp.watch('_drafts/*.+(md|markdown|MD)', gulp.series('build:jekyll:watch'));
     }
 
     // Watch html and markdown files.
-    gulp.watch(['**/*.+(html|md|markdown|MD)', '!_site/**/*.*'], ['build:jekyll:watch']);
+    gulp.watch(['**/*.+(html|md|markdown|MD)', '!_site/**/*.*'], gulp.series('build:jekyll:watch'));
 
     // Watch RSS feed XML file.
-    gulp.watch('feed.xml', ['build:jekyll:watch']);
+    gulp.watch('feed.xml', gulp.series('build:jekyll:watch'));
 
     // Watch data files.
-    gulp.watch('_data/**.*+(yml|yaml|csv|json)', ['build:jekyll:watch']);
+    gulp.watch('_data/**.*+(yml|yaml|csv|json)', gulp.series('build:jekyll:watch'));
 
     // Watch favicon.png.
-    gulp.watch('favicon.png', ['build:jekyll:watch']);
-});
+    gulp.watch('favicon.png', gulp.series('build:jekyll:watch'));
+}));
