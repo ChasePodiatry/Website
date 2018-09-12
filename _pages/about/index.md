@@ -7,7 +7,7 @@ permalink: /about/
 ## Who are we?
 Chase Podiatry & Chiropody are the largest and busiest practice in the Cannock area, with practices in Cannock and Burntwood dedicated to providing all foot care needs from simple nail cutting, hard skin and corn removal to biomechanics (foot function) and surgical options to customers throughout Cannock and the surrounding area.
 
-Unlike many practices, all of our practitioners are registered with the the [Health and Care Professions Council](https://www.hcpc-uk.org/) and [The Society of Chiropodist & Podiatrist](https://www.scpod.org/).
+Unlike many practices, all of our practitioners are registered with the the [Health and Care Professions Council](https://www.hcpc-uk.org/) and [The College of Podiatry](https://cop.org.uk/).
 
 ### Staff
 
