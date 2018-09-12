@@ -1,0 +1,97 @@
+- name: New patient assessment and treatment
+  description: |
+    All new patients will have a 30 minute appointment for assessment of medical risk in relation to foot health and history of foot condition.
+
+    Initial treatment is included.
+  price: £32.00
+
+- name: Routine treatment
+  description: Routine podiatric care of nail conditions, corns and hard skin.
+  price: £27.00
+
+- name: Routine treatment couple *per patient*
+  description: Discount is given to any 2 people who regularly attend together"
+  price: £25.00
+
+- name: Routine treatment loyalty
+  description: Discount is given on every 6th consecutively attended appointment. <br/> This is also applied to couples.
+  price: £22.00
+
+-
+
+- name: Missed appointment/cancelled on day
+  description: We request 24 hours notice to cancel an appointment otherwise we unfortunately have to apply a missed appointment fee.
+  price: £25.00
+
+-
+
+- name: Dressing appointment (10 min)
+  price: £16.00
+
+-
+
+- name: Standard Verruca treatment
+  price: £17.00
+
+- name: Verruca treatment package
+  description: A package price for 5 treatments including the first assessment
+  price: £85.00
+
+- name: Verruca Needling
+  description: Procedure done under local anaesthetic including 2 follow-up appointments
+  price: £100.00
+
+-
+
+- name: Domiciliary (home) visit
+  price: £35.00
+- name: Domiciliary & mileage
+  price: £40.00
+- name: Domiciliary couple
+  price: £60.00
+- name: Domiciliary couple & mileage
+  price: £65.00
+
+-
+
+- name: Ingrowing toe nail surgery
+  description: Procedure done under local anaesthetic including dressings and 2 follow-up appointments
+
+- name: Nail avulsion 1 toe
+  price: £250.00
+- name: Nail avulsion 2 toes
+  price: £280.00
+
+-
+
+- name: Total cost of bespoke orthotics
+  description: |
+    This includes initial assessment, any adjustments, fitting and follow-up appointment and 1 annual review.
+
+    Patients will also get to keep their own casts.
+  price: £260.00
+
+- name: Orthotic casting deposit
+  price: £80.00
+- name: Orthotics 2nd pair
+  price: £90.00
+
+-
+
+- name: Mark Price, Consultant Podiatric Surgeon consultation new patient
+  description: (consultation fee is included where treatment involves provision of bespoke orthoses package)
+  price: £150.00
+
+- name: Mark Price consultation follow up
+  price: £100.00
+
+- name: Steroid injection
+  price: £80.00
+
+- name: Sclerosing alcohol injections
+  description: Alcohol injection package for Morton’s neuroma and other soft tissue lesions. Weekly injections up to max 5.
+  price: £400.00
+
+- name: Fascial Manipulation
+  description: Specialist treatment for lower back, lower limb and foot pain. Max 3 treatments in any one course
+  price: £200.00
