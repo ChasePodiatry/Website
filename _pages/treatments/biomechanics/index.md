@@ -48,6 +48,6 @@ You may notice a number of things which are usually temporary:
 
 These devices will usually last up to a few years before they need to be replaced depending upon the useage. If you have a problem or need replacement devices then please contact us for a review.
 
-The casts provided to you can be used to make new orthosis. Additional orthosis can be purchased for £70 - £80 depending upon type but you must have your casts.
+The casts provided to you can be used to make new orthosis. Additional orthosis can be purchased if you have your casts, the price can vary and is listed on our [price list]({% link _pages/about/treatment-plans.md %}).
 
 Your orthosis will be guaranteed for twelve months from fair wear and tear. Sports orthosis that are used for marathon or long distance running can only be guaranteed for six months.

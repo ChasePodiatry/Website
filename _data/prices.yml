@@ -92,6 +92,6 @@
   description: Alcohol injection package for Morton’s neuroma and other soft tissue lesions. Weekly injections up to max 5.
   price: £400.00
 
-- name: Fascial Manipulation
-  description: Specialist treatment for lower back, lower limb and foot pain. Max 3 treatments in any one course
-  price: £200.00
+- name: Fascial Manipulation, following initial assessemnt
+  description: Specialist treatment for lower back, lower limb and foot pain.
+  price: £50.00
