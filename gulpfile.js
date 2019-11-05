@@ -106,7 +106,7 @@ gulp.task('build:jekyll', function () {
 gulp.task('build:jekyll:local', function () {
     var shellCommand = 'bundle exec jekyll build -D';
 
-    return gulp.src('')
+    return gulp.src('.')
         .pipe(run(shellCommand))
         .on('error', log.error);
 });
