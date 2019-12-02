@@ -12,7 +12,7 @@ The procedure involves removal of the outer edge of the nail, with the nail root
 It is done under a local anaesthetic ring block which completely removes all pain sensation in the toe (temporary). Cosmetically, the nail plate may look slightly narrower once fully healed but perfectly normal.
 
 After the procedure, you will be sent home with the toe bandaged and an instruction leaflet on what to do (pain medications, elevation, rest, keep dry, etc). 
-Typically, we will review you within a couple of days and change the dressing, and then given you instructions on self management of the toe (changing dressings) over the coming weeks. 
+Typically, we will review you within a week and change the dressing, and then given you instructions on self management of the toe (changing dressings) over the coming weeks. 
 We will then review the toe again at about 4-6 weeks to make sure it is healing properly. This is all included in the cost.
 
 ## Who is suited to having ingrown toenail surgery?

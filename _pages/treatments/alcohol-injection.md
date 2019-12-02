@@ -10,6 +10,9 @@ Certain shoes can cause compression of the nerve, making this worse.
 This can be diagnosed by a variety of different techniques, but we will usually examine the forefoot and ask about your clinical history.
 When required we support a diagnoses with an ultrasound or MRI scan.
 
+We will sometimes use an alcohol injection on painful corns, reducing the pain or sensitivity.
+Some corns will be completely resolved by this, leaving you pain free.
+
 ## An alcohol injection can reduce the pain
 Injecting alcohol into the neuroma will aim to slowly breakdown the nerve, reducing the pain and decreasing its size.
 Many studies have reported high success rates with the best research showing 89% success (Dockery, 1999).

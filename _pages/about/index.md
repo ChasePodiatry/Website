@@ -7,14 +7,15 @@ permalink: /about/
 ## Who are we?
 Chase Podiatry & Chiropody are the largest and busiest practice in the Cannock area, with practices in Cannock and Burntwood dedicated to providing all foot care needs from simple nail cutting, hard skin and corn removal to biomechanics (foot function) and surgical options to customers throughout Cannock and the surrounding area.
 
-Unlike many practices, all of our practitioners are registered with the the [Health and Care Professions Council](https://www.hcpc-uk.org/) and [The College of Podiatry](https://cop.org.uk/).
+Unlike many practices, all of our practitioners are registered with the [Health and Care Professions Council](https://www.hcpc-uk.org/) and [The College of Podiatry](https://cop.org.uk/).
 
 ### Staff
 
-**Mark Price**  | BSc (hons), FCPod(s), DPodM, MChS Consultant Podiatric Surgeon & Independent Prescriber (Director)
-**Paul Price** | DPodM, MChS, HCPC, Podiatrist
-**Susan Powis** | BSc (hons), MChS, Podiatrist
-**Tracey Price** | BSc(hons), DPodM, MChS Podiatrist (Director) 
+**Mark Price**          | HCPC CH08762  | MSc, BSc (hons), FCPod(s), DPodM, MCPod Consultant Podiatric Surgeon & Independent Prescriber (Director)
+**Paul Price**          | HCPC CH11207  | DPodM, MCPod, HCPC, Podiatrist
+**Susan Powis**         | HCPC CH31088  | BSc (hons), MCPod, Podiatrist
+**Tracey Price**        | HCPC CH09396  | BSc (hons), DPodM, MCPod, Podiatrist (Director)
+**Elizabeth Harrison**  | HCPC CH29581  | BSc (hons), MCPod, Podiatrist
 {: .stack }
 
 ## Contact Us

@@ -5,7 +5,8 @@ cover: /assets/img/biomechanics-treadmill.jpg
 coverAlt: Biomechcanical assetssment on a treadmill
 ---
 
-Podiatric biomechanics involves not only the assessment of the structure, alignment and function of the feet and legs but also the whole body. The foot is the only part of the human body and is completely unique to allow us to walk upright. Through a series of complex joints and muscle function it has adapted to walk on almost any surface from rough uneven ground to flat hard smooth surfaces. However, this hard flat surface causes a low grade repetitive movement that subjects the body to many forces that cause injury.
+Podiatric biomechanics involves not only the assessment of the structure, alignment and function of the feet and legs but also the whole body. The foot is part of the complex systems of the body and is completely unique to allow us to walk upright. 
+Through a series of complex joints and muscle function it has adapted to walk on almost any surface from rough uneven ground to flat hard smooth surfaces. However, this hard flat surface causes a low grade repetitive movement that subjects the body to many forces that cause injury.
 
 The average person takes an average of 10,000 steps a day with forces acting on the foot of up to twice the body weight. The majority of patients have a low arched (pronated) foot type and combined with muscle imbalance, activity levels and footwear can all lead to pain and injury.
 
@@ -29,7 +30,9 @@ In conjunction with a detailed assessment of your underlying structure (biomecha
 
 ### Video analysis
 
-Video analysis can be arranged is coming soon to The Health Hub, but is often not required for the majority of patients.
+Video analysis of gait is available at Chase Podiatry in The Burntwood Health Hub.
+
+The cost of video analysis is free as part of an orthosis package but as a separate analysis is chargeable at £100.
 
 ### In-shoe pressure analysis
 
@@ -45,6 +48,6 @@ You may notice a number of things which are usually temporary:
 
 These devices will usually last up to a few years before they need to be replaced depending upon the useage. If you have a problem or need replacement devices then please contact us for a review.
 
-The casts provided to you can be used to make new orthosis. Additional orthosis can be purchased for £70 - £80 depending upon type but you must have your casts.
+The casts provided to you can be used to make new orthosis. Additional orthosis can be purchased if you have your casts, the price can vary and is listed on our [price list]({% link _pages/about/treatment-plans.md %}).
 
 Your orthosis will be guaranteed for twelve months from fair wear and tear. Sports orthosis that are used for marathon or long distance running can only be guaranteed for six months.
