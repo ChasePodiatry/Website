@@ -58,7 +58,7 @@ gulp.task('build:styles', function (callback) {
     return gulp.src(paths.sassFilesGlob)
         .pipe(sourcemaps.init())
         .pipe(sass({importer: sassImporter}).on('error', sass.logError))
-        .pipe(postcss([autoprefixer({browsers: ['last 2 versions']})]))
+        .pipe(postcss([autoprefixer()]))
         .pipe(cleancss())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.jekyllCssFiles))

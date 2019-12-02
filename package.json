@@ -25,5 +25,8 @@
   },
   "scripts": {
     "postinstall": "curl https://htmltest.wjdp.uk | bash -s -- -b ./vendor"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
