@@ -1,0 +1,52 @@
+<div class="reveal" id="covid" data-reveal>
+    <h1>COVID-19 Patient Statement</h1>
+    <p>
+        We continue to remain open and providing our services, but our main priority is keeping our team and clients
+        safe and healthy. We have high standards of hygiene as a matter of course, but will be taking increased measures
+        to make our clinics as clean and safe as we possibly can.
+    </p>
+
+    <p>
+        Can we please request that patients who will still be visiting the clinic follow the Government guidelines on
+        hand washing or sanitising immediately prior to attending.
+    </p>
+
+    <p>
+        If you are unable to attend because you need to self-isolate, or are in one of the identified at risk groups,
+        please ring to cancel your appointment. We will be contacting all patients booked in as a matter of course, so
+        don’t worry if you can’t get through. For those patients still able to attend, we may request that we move your
+        appointment as we will need to restructure our clinics. Please bear with us on this point.
+    </p>
+
+    <p>
+        From all of us here at Chase Podiatry, we sincerely hope you do stay well and look forward to seeing you all
+        again in the not too distant future.
+    </p>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <button class="button float-right" data-close>
+        Close
+    </button>
+</div>
+
+<div id="covid-info">
+    <button class="button" data-open="covid">
+        COVID-19
+    </button>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#covid').foundation();
+        $('#covid').on('closed.zf.reveal', function() {
+            Cookies.set('covid', '', { expires: 1 })
+        });
+
+        if(Cookies.get('covid') === undefined) {
+            $('#covid').foundation('open');
+        }
+    });
+</script>
