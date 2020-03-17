@@ -52,7 +52,8 @@ paths.jsFilesGlob    = paths.jsFiles    + paths.jsPattern;
 paths.imageFilesGlob = paths.imageFiles + paths.imagePattern;
 paths.vendorJsFilesGlob = [
     paths.nodeDir + "jquery/dist/jquery.js",
-    paths.nodeDir + "foundation-sites/dist/js/foundation.js"
+    paths.nodeDir + "foundation-sites/dist/js/foundation.js",
+    paths.nodeDir + "js-cookie/src/js.cookie.js",
 ];
 
 // Jekyll files globs
