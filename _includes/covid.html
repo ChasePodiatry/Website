@@ -1,36 +1,27 @@
 <div class="reveal" id="covid" data-reveal>
-    <h1>COVID-19 Patient Statement</h1>
+    <h1>
+        COVID-19 Patient Statement
+        <small>Updated: 24th March 2020</small>
+    </h1>
     <p>
-        We continue to remain open and providing our services, but our main priority is keeping our team and clients
-        safe and healthy. We have high standards of hygiene as a matter of course, but will be taking increased measures
-        to make our clinics as clean and safe as we possibly can.
+        As a medical facility, we are able to continue to offer our service. However, we must ask that you really
+        consider whether it is essential that you come in for your appointment. For the majority of people, a foot
+        problem can wait.
     </p>
     <p>
-        Please do not attend the practice if you have the key symptoms for possible infection of Corona Virus. These are
-        a high temperature and / or a new continuous cough. If you are in a household where someone else has symptoms,
-        again you should self isolate and postpone your appointment for 14 days.
+        Over the next 3 weeks, we will be offering a reduced service for essential care only. We will be contacting all
+        of our patients to assess whether they really need to be seen, if they haven’t already made the decision to
+        cancel. If somebody does need to come in for care, we will have extended appointment slots to limit contact with
+        other patients in our waiting area. We would ask that you come into the practice alone wherever possible.
     </p>
     <p>
-        If you are unable to attend because you need to self- isolate, or are in one of the identified at risk groups,
-        please ring to cancel your appointment.
+        Our position remains subject to advice from the Government and our governing body, The College of Podiatry.
     </p>
     <p>
-        Besides our high standards of hygiene, we are taking a few extra precautions to help prevent spreading of the
-        virus. When you attend the practice, we will give you a squirt of hand gel to sanitise your hands. If somebody
-        is accompanying you, it would be better for them to wait in the car wherever possible, unless they are also a
-        patient with an appointment. Could you please turn up just a couple of minutes before your appointment. We are
-        just trying to limit the number of people in the waiting area. We are also working on spreading out our
-        appointments so that there are slightly longer intervals between patients.
+        We will review this situation and be back in touch with our patients as and when anything changes.
     </p>
     <p>
-        We are also offering home visits as an alternative for those people unable to attend. As health care
-        professionals, the guidelines still allow us to visit patients in their own homes. We would have to assess the
-        visit on the day of the appointment, to make sure it is a safe environment for our staff to attend. We are
-        offering our visits at a reduced price to our normal fee, at £30.
-    </p>
-    <p>
-        From all of us here at Chase Podiatry, we sincerely hope you do stay well and look forward to seeing you all
-        again in the not too distant future.
+        We hope you all stay safe and well.
     </p>
 
     <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -49,13 +40,14 @@
 </div>
 
 <script>
+    const covidCookie = 'covid-20200314';
     $(document).ready(function () {
         $('#covid').foundation();
         $('#covid').on('closed.zf.reveal', function () {
-            Cookies.set('covid', '', {expires: 1})
+            Cookies.set(covidCookie, '', {expires: 1})
         });
 
-        if (Cookies.get('covid') === undefined) {
+        if (Cookies.get(covidCookie) === undefined) {
             $('#covid').foundation('open');
         }
     });
