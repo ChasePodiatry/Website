@@ -3,39 +3,39 @@
     All new patients will have a 30 minute appointment for assessment of medical risk in relation to foot health and history of foot condition.
 
     Initial treatment is included.
-  price: £32.00
+  price: £33.00
 
 - name: Routine treatment
   description: Routine podiatric care of nail conditions, corns and hard skin.
-  price: £27.00
+  price: £28.00
 
 - name: Routine treatment couple *per patient*
   description: Discount is given to any 2 people who regularly attend together"
-  price: £25.00
+  price: £26.00
 
 - name: Routine treatment loyalty
   description: Discount is given on every 6th consecutively attended appointment. <br/> This is also applied to couples.
-  price: £22.00
+  price: £23.00
 
 -
 
 - name: Missed appointment/cancelled on day
   description: We request 24 hours notice to cancel an appointment otherwise we unfortunately have to apply a missed appointment fee.
-  price: £25.00
+  price: £27.00
 
 -
 
 - name: Dressing appointment (10 min)
-  price: £16.00
+  price: £17.00
 
 -
 
 - name: Standard Verruca treatment
-  price: £17.00
+  price: £18.00
 
 - name: Verruca treatment package
   description: A package price for 5 treatments including the first assessment
-  price: £85.00
+  price: £90.00
 
 - name: Verruca Needling
   description: Procedure done under local anaesthetic including 2 follow-up appointments
@@ -90,7 +90,7 @@
 
 - name: Sclerosing alcohol injections
   description: Alcohol injection package for Morton’s neuroma and other soft tissue lesions. Weekly injections up to max 5.
-  price: £250.00
+  price: £400.00
 
 - name: Fascial Manipulation, following initial assessemnt
   description: Specialist treatment for lower back, lower limb and foot pain.
