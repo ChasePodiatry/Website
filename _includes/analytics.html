@@ -1,3 +1,4 @@
+{% if site.google_analytics %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js"></script>
 <script>
@@ -8,3 +9,6 @@
     gtag('config', '{{ site.google_analytics }}', {'siteSpeedSampleRate': 100});
     gtag('config', 'AW-1007176580');
 </script>
+{% endif %}
+
+<script async defer data-domain="chase-podiatry.co.uk" src="https://stats.codedinternet.com/js/plausible.js"></script>
