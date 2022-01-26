@@ -1,4 +1,6 @@
-(function ($) {
+import $ from 'jquery';
+
+// (function ($) {
 
     $.fn.parallax = function () {
         var window_width = $(window).width();
@@ -75,4 +77,4 @@
         });
 
     };
-}(jQuery));
+// }(jQuery));
