@@ -26,7 +26,6 @@
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "@squoosh/lib": "^0.4.0",
-    "@webpack-cli/generators": "^2.4.2",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^10.2.1",
@@ -40,7 +39,6 @@
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^3.11.1"
+    "webpack-cli": "^4.9.2"
   }
 }
