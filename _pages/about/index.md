@@ -11,7 +11,7 @@ Unlike many practices, all of our practitioners are registered with the [Health 
 
 ### Staff
 
-**Mark Price**          | HCPC CH08762  | MSc, BSc (hons), FCPod(s), DPodM, MCPod Consultant Podiatric Surgeon & Independent Prescriber (Director)
+**Dr. Mark Price**      | HCPC CH08762  | PhD, MSc, BSc (hons), FCPod(s), DPodM, MCPod Consultant Podiatric Surgeon & Independent Prescriber (Director)
 **Paul Price**          | HCPC CH11207  | DPodM, MCPod, HCPC, Podiatrist
 **Susan Powis**         | HCPC CH31088  | BSc (hons), MCPod, Podiatrist
 **Tracey Price**        | HCPC CH09396  | BSc (hons), DPodM, MCPod, Podiatrist (Director)
@@ -23,7 +23,7 @@ Unlike many practices, all of our practitioners are registered with the [Health 
 &nbsp;          | Phone                             | Email                                                                             | Address
 ----------------|-----------------------------------|-----------------------------------------------------------------------------------|---------
 **Cannock**     | [01543 577566](tel:01543577566)   | [reception@chase-podiatry.co.uk](mailto:reception@chase-podiatry.co.uk)           | 10 Mill Street <br/> Cannock <br/> WS11 0DL
-**Burntwood**   | [01543 684980](tel:01543684980)   | [reception@burntwoodhealthhub.co.uk](mailto:reception@burntwoodhealthhub.co.uk)   | 5 Swan Corner Shopping Precinct <br/> Chase Road <br/> Burntwood <br/> WS70DW
+**Burntwood**   | [01543 577566](tel:01543577566)   | [reception@burntwoodhealthhub.co.uk](mailto:reception@burntwoodhealthhub.co.uk)   | 5 Swan Corner Shopping Precinct <br/> Chase Road <br/> Burntwood <br/> WS70DW
 {: .stack }
 
 ### Social Media
