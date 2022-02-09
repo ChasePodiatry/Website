@@ -16,6 +16,7 @@ Unlike many practices, all of our practitioners are registered with the [Health 
 **Susan Powis**         | HCPC CH31088  | BSc (hons), MCPod, Podiatrist
 **Tracey Price**        | HCPC CH09396  | BSc (hons), DPodM, MCPod, Podiatrist (Director)
 **Elizabeth Harrison**  | HCPC CH29581  | BSc (hons), MCPod, Podiatrist
+**Georgina Hicken**     |               | Footcare Assistant
 {: .stack }
 
 ## Contact Us
