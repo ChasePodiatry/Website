@@ -8,14 +8,13 @@
     "what-input": "^5.2.10"
   },
   "scripts": {
-    "postinstall": "curl https://htmltest.wjdp.uk | bash -s -- -b ./vendor",
     "develop": "bundle exec jekyll clean && run-p develop:{webpack,jekyll}",
     "develop:jekyll": "sleep 5 && bundle exec jekyll serve --watch",
     "develop:webpack": "webpack --mode development --watch",
     "build": "run-s build:webpack build:jekyll build:htmltest",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
     "build:webpack": "webpack --mode production",
-    "build:htmltest": "vendor/htmltest",
+    "build:htmltest": "curl https://htmltest.wjdp.uk | bash -s -- -b ./vendor && vendor/htmltest",
     "watch": "webpack --watch",
     "serve": "webpack serve"
   },
