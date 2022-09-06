@@ -11,12 +11,12 @@ Unlike many practices, all of our practitioners are registered with the [Health 
 
 ### Staff
 
-**Dr. Mark Price**      | HCPC CH08762  | PhD, MSc, BSc (hons), FCPod(s), DPodM, MCPod Consultant Podiatric Surgeon & Independent Prescriber (Director)
-**Paul Price**          | HCPC CH11207  | DPodM, MCPod, HCPC, Podiatrist
-**Susan Powis**         | HCPC CH31088  | BSc (hons), MCPod, Podiatrist
-**Tracey Price**        | HCPC CH09396  | BSc (hons), DPodM, MCPod, Podiatrist (Director)
-**Elizabeth Harrison**  | HCPC CH29581  | BSc (hons), MCPod, Podiatrist
-**Georgina Hicken**     |               | Footcare Assistant
+**Dr. Mark Price**      | HCPC CH08762  | DHSC, MSc, BSc (hons), FCRPod(s), DPodM, MCRPod Consultant Podiatric Surgeon & Independent Prescriber (Director)
+**Paul Price**          | HCPC CH11207  | DPodM, MCRPod, HCPC, Podiatrist
+**Susan Powis**         | HCPC CH31088  | BSc (hons), MCRPod, Podiatrist
+**Lewis Powell**        | HCPC CH036307 | BSc(Hons), MRCPod
+**Tracey Price**        |               | BSc (hons), DPodM, MCRPod, Retired Podiatrist (Director)
+**Georgina Hicken**     |               | Podiatry Assistant
 {: .stack }
 
 ## Contact Us
