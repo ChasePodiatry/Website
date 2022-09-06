@@ -5,7 +5,7 @@ coverAlt: Nail Surgery
 ---
 
 ## What Is Nail Surgery And How Is It Done?
-At Chase Podiatry & Chiropody, we can clear the ingrown or damaged nail using a simple and painless clinical technique. If this is not possible we can perform a partial or total nail excision with chemical matrixectomy under local anaesthetic. Antibiotics can be provided from stock or by private prescription.
+At Chase Podiatry, we can clear the ingrown or damaged nail using a simple and painless clinical technique. If this is not possible we can perform a partial or total nail excision with chemical matrixectomy under local anaesthetic. Antibiotics can be provided from stock or by private prescription.
 This has been shown through research to be the most reliable form of procedure to reduce the risk of recurrence caused by a regrowth of the nail. Nail surgery is generally very safe, with very minimal pain afterwards, and can be safely performed in an office based clinical setting.
 
 The procedure involves removal of the outer edge of the nail, with the nail root (matrix), and treatment of the area where the nail root is located with an acid (phenol) to destroy the cells which are responsible for nail growth. 

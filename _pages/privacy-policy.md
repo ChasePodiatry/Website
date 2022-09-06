@@ -3,7 +3,7 @@ layout: page
 title: Privacy Policy
 ---
 
-Privacy policies can be confusing. This page explains our approach to your privacy across Chase Podiatry & Chiropody websites and our secure patient records system, and how it affects you.
+Privacy policies can be confusing. This page explains our approach to your privacy across Chase Podiatry websites and our secure patient records system, and how it affects you.
 {: .lead }
 
 ## Short version
@@ -45,7 +45,7 @@ In order to help us in the provision of our services, we may be required on occa
 * Health Insurance Company - if you have health insurance, they will be notified of treatment via an invoice. 
 
 ## Security
-Chase Podiatry & Chiropody takes many precautions to prevent the loss, misuse or alteration of your personal information. These measures include:
+Chase Podiatry takes many precautions to prevent the loss, misuse or alteration of your personal information. These measures include:
 
 * Use of SSL encryption for you sensitive data.
 * Hardware stored in secured  offsite datacentres behind firewalls.
@@ -61,4 +61,4 @@ We may update this privacy policy from time-to-time, particularly as technology 
 
 ## Any questions?
 
-If you have any questions about this privacy policy or your personal data, please write to us by email to [reception@chase-podiatry.co.uk](mailto:reception@chase-podiatry.co.uk) or by post to Chase Podiatry & Chiropody, 10 Mill Street, Cannock, WS11 0DL, United Kingdom.
+If you have any questions about this privacy policy or your personal data, please write to us by email to [reception@chase-podiatry.co.uk](mailto:reception@chase-podiatry.co.uk) or by post to Chase Podiatry, 10 Mill Street, Cannock, WS11 0DL, United Kingdom.
