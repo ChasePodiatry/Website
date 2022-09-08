@@ -39,6 +39,13 @@ sass:
     - _sass
     - node_modules
 
+webp:
+  enabled: false
+  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
+  quality: 90
+  img_dir: ["/assets/img"]
+  nested: true
+
 collections:
   pages:
     output: true

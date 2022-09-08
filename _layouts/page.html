@@ -6,9 +6,13 @@ layout: default
     <header class="page-header {% if page.cover or layout.cover %} parallax-container {% else %} fill {% endif %}">
         {% if page.cover or layout.cover %}
             <div class="parallax">
-                <img src="{{ page.cover | default: layout.cover }}" alt="{{ page.coverAlt | default: layout.coverAlt }}"/>
+                <picture>
+                    <source srcset="{{ page.cover | replace: 'jpg','webp' | replace: 'png','webp' }}" type="image/webp">
+                    <img src="{{ page.cover | default: layout.cover }}" alt="{{ page.coverAlt | default: layout.coverAlt }}"/>
+                </picture>
             </div>
         {% endif %}
+
         <div class="grid-container standout">
             <div class="grid-y">
                 <div class="cell auto">&nbsp;</div>

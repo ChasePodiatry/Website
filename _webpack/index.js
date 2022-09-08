@@ -1,10 +1,9 @@
 import $ from 'jquery';
 import 'foundation-sites/js/foundation';
 import Cookies from 'js-cookie';
+import simpleParallax from 'simple-parallax-js';
 
 import './styles/main.scss';
-
-import './js/parallax';
 
 window.jQuery = $;
 window.$ = $;
@@ -13,5 +12,5 @@ window.Cookies = Cookies;
 $(document).foundation();
 
 $(document).ready(function() {
-    $('.parallax').parallax();
+    new simpleParallax(document.querySelectorAll('.parallax'));
 });

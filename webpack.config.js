@@ -61,10 +61,23 @@ const config = {
     optimization: {
         minimizer: [
             new ImageMinimizerPlugin({
+                deleteOriginalAssets: false,
                 minimizer: {
-                    implementation: ImageMinimizerPlugin.squooshMinify,
-                    options: {}
-                }
+                    implementation: ImageMinimizerPlugin.sharpMinify,
+                },
+                generator: [
+                    {
+                        type: "asset",
+                        implementation: ImageMinimizerPlugin.sharpGenerate,
+                        options: {
+                            encodeOptions: {
+                                webp: {
+                                    quality: 90,
+                                },
+                            },
+                        },
+                    },
+                ],
             })
         ],
 
