@@ -3,19 +3,19 @@
     All new patients will have a 30 minute appointment for assessment of medical risk in relation to foot health and history of foot condition.
 
     Initial treatment is included.
-  price: £35.00
+  price: £37.00
 
 - name: Routine treatment
   description: Routine podiatric care of nail conditions, corns and hard skin.
-  price: £30.00
+  price: £31.00
 
 - name: Routine treatment couple *per patient*
   description: Discount is given to any 2 people who regularly attend together.
-  price: £28.00
+  price: £29.00
 
 - name: Routine treatment loyalty
   description: Discount is given on every 6th consecutively attended appointment.
-  price: £26.00
+  price: £27.00
 
 -
 
@@ -26,20 +26,20 @@
 -
 
 - name: Dressing appointment (10 min)
-  price: £19.00
+  price: £20.00
 
 - name: Nail care clinic
   description: An appointment for basic nail care with a Podiatry Assistant Practitioner.
-  price: £19.00
+  price: £20.00
 
 -
 
 - name: Standard Verruca treatment
-  price: £20.00
+  price: £22.00
 
 - name: Verruca treatment package
   description: A package price for 5 treatments including the first assessment
-  price: £105.00
+  price: £120.00
 
 - name: Verruca Needling
   description: Procedure done under local anaesthetic including 2 follow-up appointments
