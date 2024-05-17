@@ -1,44 +1,39 @@
 {
-  "dependencies": {
-    "del": "^7.0.0",
-    "fancy-log": "^2.0.0",
-    "foundation-sites": "^6.7.4",
-    "jquery": "^3.6.0",
-    "js-cookie": "^3.0.1",
-    "simple-parallax-js": "^5.6.2",
-    "what-input": "^5.2.10"
-  },
+  "name": "chase-podiatry.co.uk",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "develop": "bundle exec jekyll clean && run-p develop:{webpack,jekyll}",
-    "develop:jekyll": "sleep 5 && bundle exec jekyll serve --watch",
-    "develop:webpack": "webpack --mode development --watch",
-    "build": "run-s build:webpack build:jekyll build:htmltest",
-    "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
-    "build:webpack": "webpack --mode production",
-    "build:htmltest": "curl https://htmltest.wjdp.uk | bash -s -- -b ./vendor && vendor/htmltest",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "build": "nuxt build && npm run htmltest",
+    "dev": "nuxt dev --public",
+    "generate": "nuxt generate",
+    "preview": "npm run build && wrangler pages dev",
+    "postinstall": "nuxt prepare && curl https://htmltest.wjdp.uk | bash",
+    "deploy": "npm run build && wrangler pages deploy",
+    "cf-typegen": "wrangler types",
+    "htmltest": "./bin/htmltest dist/"
   },
-  "browserslist": [
-    "defaults"
-  ],
+  "dependencies": {
+    "@nuxt/content": "^2.12.1",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/seo": "^2.0.0-rc.10",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@tailwindcss/typography": "^0.5.13",
+    "fb-ts": "^3.0.4",
+    "isomorphic-git": "^1.25.10",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "nuxt": "^3.11.2",
+    "nuxt-icon": "^0.6.10",
+    "sharp": "^0.33.4",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/preset-env": "^7.16.11",
-    "autoprefixer": "^10.4.2",
-    "babel-loader": "^8.2.2",
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.5.1",
-    "image-minimizer-webpack-plugin": "^3.2.3",
-    "mini-css-extract-plugin": "^2.6.1",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.5",
-    "postcss-loader": "^7.0.1",
-    "prettier": "^2.2.1",
-    "sass": "^1.30.0",
-    "sass-loader": "^13.0.2",
-    "sharp": "^0.31.0",
-    "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2"
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "nitro-cloudflare-dev": "^0.1.4",
+    "wrangler": "^3.55.0"
+  },
+  "volta": {
+    "node": "18.17.1"
   }
 }

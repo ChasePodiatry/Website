@@ -1,0 +1,15 @@
+body:
+  - name: Dr. Mark Price
+    reg: HCPC CH08762
+    edu: DHSC, MSc, BSc (hons), FCRPod(s), DPodM, MCRPod Consultant Podiatric Surgeon & Independent Prescriber (Director)
+  - name: Paul Price
+    reg: HCPC CH11207
+    edu: DPodM, MCRPod, HCPC, Podiatrist
+  - name: Susan Powis
+    reg: HCPC CH31088
+    edu: BSc (hons), MCRPod, Podiatrist
+  - name: Lewis Powell
+    reg: HCPC CH036307
+    edu: BSc(Hons), MRCPod
+  - name: Tracey Price
+    edu: BSc (hons), DPodM, MCRPod, Retired Podiatrist (Director)

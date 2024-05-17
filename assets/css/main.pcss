@@ -1,0 +1,49 @@
+@import "_typography.pcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-sans;
+    }
+
+    body {
+        @apply bg-slate-200 text-black;
+        @apply dark:bg-slate-700 dark:text-white;
+    }
+
+    a {
+        @apply text-gray-900 md:hover:text-chase-blue-700 md:dark:hover:text-chase-blue-500 dark:text-gray-50 dark:hover:text-white;
+    }
+
+    article {
+        ul {
+            @apply list-disc list-outside pl-5 md:pl-10;
+        }
+
+        ol {
+            @apply list-decimal list-outside pl-5 md:pl-10;
+        }
+    }
+}
+
+@layer components {
+    nav {
+        a.router-link-active {
+            @apply text-chase-blue-700 dark:text-chase-blue-400
+        }
+    }
+
+    .flex-col {
+        table {
+            thead {
+                @apply hidden;
+            }
+            tr {
+                @apply w-full;
+            }
+        }
+    }
+}
