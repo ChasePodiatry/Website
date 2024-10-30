@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import Default from "~/layouts/default.vue";
-import TOC from "~/components/nav/TOC.vue";
 
-const {page, toc} = useContent()
+const {page} = useContent();
 
 </script>
 

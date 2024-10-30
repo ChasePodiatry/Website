@@ -2,8 +2,7 @@
 const {page} = useContent();
 
 useSeoMeta({
-  // @ts-expect-error
-  articleModifiedTime: page.updatedAt,
+  articleModifiedTime: page.value?.updatedAt,
 })
 
 </script>
