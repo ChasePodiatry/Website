@@ -12,8 +12,6 @@ useSeoMeta({
 
 <template>
   <div class="container">
-    <h1 class="text-center">Treatments</h1>
-
     <div class="grid lg:grid-cols-2 gap-10 place-content-stretch">
       <template
           v-for="[index, treatment] in treatments!.entries()"

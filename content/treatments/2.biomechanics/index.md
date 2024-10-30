@@ -1,8 +1,5 @@
 ---
 title: Biomechanics
-permalink: /treatments/biomechanics/
-cover: biomechanics-treadmill.jpg
-coverAlt: Biomechcanical assetssment on a treadmill
 ---
 
 Podiatric biomechanics involves not only the assessment of the structure, alignment and function of the feet and legs

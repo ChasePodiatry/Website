@@ -16,10 +16,10 @@ Unlike many practices, all of our practitioners are registered with the [Health 
 
 <div class="flex flex-col">
 
-| &nbsp;        | Phone                           | Email                                                                           | Address                                                                       |
-|---------------|---------------------------------|---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Cannock**   | [01543 577566](tel:01543577566) | [reception@chase-podiatry.co.uk](mailto:reception@chase-podiatry.co.uk)         | 10 Mill Street <br/> Cannock <br/> WS11 0DL                                   |
-| **Burntwood** | [01543 577566](tel:01543577566) | [reception@burntwoodhealthhub.co.uk](mailto:reception@burntwoodhealthhub.co.uk) | 5 Swan Corner Shopping Precinct <br/> Chase Road <br/> Burntwood <br/> WS70DW |
+| &nbsp;        | Phone                           | Email                                                                   | Address                                     |
+|---------------|---------------------------------|-------------------------------------------------------------------------|---------------------------------------------|
+| **Cannock**   | [01543 577566](tel:01543577566) | [reception@chase-podiatry.co.uk](mailto:reception@chase-podiatry.co.uk) | 10 Mill Street <br/> Cannock <br/> WS11 0DL |
+| **Burntwood** | [01543 577566](tel:01543577566) | <td colspan="2"><strong>Temporarily closed</strong><br/>Due to recent fire damage, our Burntwood clinic is currently closed</td>
 
 </div>
 

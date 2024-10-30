@@ -1,9 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import * as os from "os";
-import GitTransformer from "./modules/git-transformer/git-transformer.mjs";
+import {defineNuxtConfig} from "nuxt/config";
 
 export default defineNuxtConfig({
     devtools: {enabled: true},
+    compatibilityDate: '2024-10-30',
     ssr: true,
 
     runtimeConfig: {
@@ -15,12 +16,14 @@ export default defineNuxtConfig({
 
     app: {
         buildAssetsDir: "/res/",
-        rootTag: "body"
+        rootTag: "body",
     },
 
     site: {
         url: "https://www.chase-podiatry.co.uk",
+        name: "Chase Podiatry",
         trailingSlash: true,
+        locale: "en-GB",
     },
 
     content: {
@@ -33,10 +36,19 @@ export default defineNuxtConfig({
         },
         experimental: {
             clientDB: true,
+            cacheContents: true,
         }
     },
 
-    experimental: { defaults: { nuxtLink: { trailingSlash: 'append' } } },
+    sitemap: {
+        strictNuxtContentPaths: true,
+    },
+
+    robots: {
+        enabled: false,
+    },
+
+    experimental: {defaults: {nuxtLink: {trailingSlash: 'append'}}},
 
     nitro: {
         preset: "cloudflare-pages",
@@ -63,10 +75,9 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         "@nuxtjs/seo",
         "@nuxt/image",
-
+        "@nuxt/icon",
         "@nuxt/content",
-
-        'nuxt-icon',
+        'nuxt-content-git',
     ],
 
     tailwindcss: {
@@ -75,7 +86,7 @@ export default defineNuxtConfig({
 
     image: {
         dir: 'assets/img',
-        format: ['avif', 'webp', 'png'],
+        format: ['avif'],
         provider: process.env.NODE_ENV == 'production' ? 'ipxStatic' : 'auto',
     },
 })

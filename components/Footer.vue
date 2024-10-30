@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const config = useRuntimeConfig();
 
 const phone = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`;
@@ -11,24 +10,32 @@ const phone = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`;
     <div class="container flex flex-wrap flex-col md:flex-row content-between justify-between mx-auto p-4 gap-10">
       <div class="flex-1 flex flex-wrap">
         <div class="flex-1">
-          <h4>contact</h4>
+          <strong class="text-2xl">contact</strong>
           <ul>
             <li>
-              <a :href="phone">call us</a>
+              <TelLink>call us</TelLink>
             </li>
             <li>
               <a :href="`mailto:${config.public.email}`">email us</a>
             </li>
             <li>
-              <NuxtLink href="/about/#locations">locations</NuxtLink>
+              <NuxtLink href="/about/#contact-us">locations</NuxtLink>
             </li>
           </ul>
         </div>
         <div class="flex-1">
-          <h4>services</h4>
+          <strong class="text-2xl">services</strong>
+          <ul>
+            <li>
+              <NuxtLink to="/treatments/">treatments</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/about/treatment-plans/">prices</NuxtLink>
+            </li>
+          </ul>
         </div>
         <div class="flex-1">
-          <h4>about</h4>
+          <strong class="text-2xl">about</strong>
           <ul>
             <li>
               <NuxtLink to="/privacy/">privacy</NuxtLink>

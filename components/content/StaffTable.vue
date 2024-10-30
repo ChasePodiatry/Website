@@ -7,7 +7,7 @@ const staffData = await queryContent('/about/staff').findOne();
 </script>
 
 <template>
-  <table class="flex flex-col space-y-1">
+  <table class="flex flex-col striped">
     <template v-for="staff in staffData.body">
       <tr class="flex flex-col" v-if="typeof staff === 'object'">
         <td class="font-bold">{{ staff.name }}</td>

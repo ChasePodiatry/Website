@@ -17,7 +17,7 @@ const tel = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`
 <template>
   <div class="bg-gray-100 dark:bg-gray-900 drop-shadow-lg">
     <nav class="container">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
         <div class="inline-flex flex-1 md:hidden">
           <button @click="menuExpanded = !menuExpanded" type="button"
                   class="mr-auto items-center p-2 w-10 h-10 justify-left text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -39,10 +39,11 @@ const tel = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`
         </NuxtLink>
 
         <div class="flex flex-1 space-x-3 md:space-x-0 rtl:space-x-reverse items-center justify-end md:order-last text-center">
-          <a :href="tel" class="bg-chase-purple p-2 m-2 rounded text-white">Call
+          <TelLink :phone="config.public.phone" class="bg-chase-purple p-2 m-2 rounded text-white text-xs md:text-lg">
+            Call
             <span class="md:hidden">now</span>
             <span class="hidden md:inline">{{config.public.phone}}</span>
-          </a>
+          </TelLink>
         </div>
 
         <div class="items-stretch justify-between w-full md:flex md:w-auto md:h-14" :class="menuExpanded ? 'visible' : 'hidden'" id="navbar-items">
