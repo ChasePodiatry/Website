@@ -1,5 +1,6 @@
 ---
 title: Biomechanics
+cover: biomechanics-treadmill.jpg
 ---
 
 Podiatric biomechanics involves not only the assessment of the structure, alignment and function of the feet and legs
