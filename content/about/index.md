@@ -1,6 +1,5 @@
 ---
 title: About
-permalink: /about/
 ---
 
 ## Who are we?

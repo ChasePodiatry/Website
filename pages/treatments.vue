@@ -8,10 +8,14 @@ useSeoMeta({
   description: "Chase Podiatry offer a range of podiatric, biomechanical, surgical, and general footcare treatments across our two locations in Cannock and Burntwood"
 })
 
+definePageMeta({
+  layout: "default",
+})
+
 </script>
 
 <template>
-  <div class="container">
+    <LayoutPageTitle />
     <div class="grid lg:grid-cols-2 gap-10 place-content-stretch">
       <template
           v-for="[index, treatment] in treatments!.entries()"
@@ -54,8 +58,6 @@ useSeoMeta({
         </NuxtLink>
       </template>
     </div>
-  </div>
-
 </template>
 
 <style scoped>

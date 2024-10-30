@@ -1,6 +1,6 @@
 <script setup lang="ts">
 export interface Props {
-  phone: string
+  phone?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {

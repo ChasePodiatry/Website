@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const content = useContent();
+
+definePageMeta({
+  layout: "page",
+})
 </script>
 
 <template>

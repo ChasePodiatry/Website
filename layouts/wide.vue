@@ -1,10 +1,4 @@
 <script setup lang="ts">
-const {page} = useContent();
-
-useSeoMeta({
-  // @ts-expect-error
-  articleModifiedTime: page.updatedAt,
-})
 
 </script>
 
@@ -12,7 +6,7 @@ useSeoMeta({
   <header>
     <NavBar/>
   </header>
-  <LayoutBaseArticle class="container">
+  <LayoutBaseArticle>
     <slot/>
   </LayoutBaseArticle>
   <Footer/>
