@@ -5,11 +5,13 @@ const props = defineProps<{
   id: string
 }>();
 
-const accepted = ref<boolean>((window.localStorage.getItem(`cookie-${props.id}`) ?? false) as boolean);
+const accepted = ref<boolean>(
+    (window?.localStorage?.getItem(`cookie-${props.id}`) ?? false) as boolean
+);
 
 function accept() {
   accepted.value = true;
-  window.localStorage.setItem(`cookie-${props.id}`, String(true));
+  window?.localStorage?.setItem(`cookie-${props.id}`, String(true));
 }
 
 </script>
