@@ -57,6 +57,7 @@ const phone = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`;
                 <div class="h-1/3 relative">
                   <NuxtPicture class="h-full w-full absolute -z-10" src="waiting-room.png"
                                alt="Chase Podiatry's waiting room"
+                               sizes="sm:100vw md:300px lg:400px"
                                :img-attrs="{class: 'h-full w-full object-cover object-center'}"/>
                   <div
                       class="h-full flex flex-row gap-5 p-5 md:p-7 justify-around items-center from-black to-transparent bg-gradient-to-b">
@@ -70,7 +71,7 @@ const phone = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`;
                 <div class="flex-1 flex flex-col justify-around p-5">
                   <span>
                     Chase Podiatry does not use cookies on it's website, however loading our Facebook page will store
-                    3-rd party Facebook cookies.
+                    3rd party Facebook cookies.
                   </span>
                   <button @click="promptProps.accept"
                           class="bg-green-700 border border-green-700 hover:bg-green-800 hover:border-green-800 w-fit mx-auto py-2 px-5 rounded">
