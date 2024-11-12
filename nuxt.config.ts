@@ -11,6 +11,12 @@ export default defineNuxtConfig({
         public: {
             email: "reception@chase-podiatry.co.uk",
             phone: "01543 577566",
+            address: [
+                "Chase Podiatry",
+                "10 Mill Street",
+                "Cannock",
+                "WS11 0DL",
+            ]
         }
     },
 

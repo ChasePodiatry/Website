@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241022.0",
+    "@iconify-json/carbon": "^1.2.4",
     "@iconify/vue": "^4.1.2",
     "nitro-cloudflare-dev": "^0.2.1",
     "wrangler": "^3.83.0"
