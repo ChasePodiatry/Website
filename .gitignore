@@ -16,6 +16,7 @@ dist-ssr
 bin/
 tmp/
 .unlighthouse
+.wrangler
 
 # Editor directories and files
 .vscode/*

@@ -48,7 +48,7 @@ const phone = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`;
         <FooterRegistrations class="hidden md:flex"/>
       </div>
       <div class="w-full md:w-[300px] lg:w-[400px] h-[400px]">
-        <h4>follow</h4>
+        <strong class="text-2xl">follow</strong>
         <CookiePrompt id="facebook">
           <template #prompt="promptProps">
             <div id="fb-prompt"
@@ -73,8 +73,8 @@ const phone = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`;
                     3-rd party Facebook cookies.
                   </span>
                   <button @click="promptProps.accept"
-                          class="bg-green-400 border border-green-500 w-fit mx-auto py-2 px-5 rounded">
-                    Accept
+                          class="bg-green-700 border border-green-700 hover:bg-green-800 hover:border-green-800 w-fit mx-auto py-2 px-5 rounded">
+                    <span class="drop-shadow">Accept</span>
                   </button>
                 </div>
               </div>

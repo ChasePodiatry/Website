@@ -82,6 +82,7 @@ export default defineNuxtConfig({
 
     tailwindcss: {
         cssPath: "~/assets/css/main.pcss",
+        exposeConfig: true,
     },
 
     image: {

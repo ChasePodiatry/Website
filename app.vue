@@ -1,10 +1,12 @@
 <script lang="ts" setup>
 
-const appConfig = useAppConfig();
 const siteConfig = useSiteConfig();
 const route = useRoute();
 
 useHead({
+  htmlAttrs: {
+    lang: siteConfig.locale,
+  },
   link: [
     {rel: 'sitemap', type: 'application/xml', href: '/sitemap.xml'},
     {rel: 'canonical', href: `${siteConfig.url}${route.fullPath}`},

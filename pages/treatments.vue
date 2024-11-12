@@ -39,6 +39,7 @@ definePageMeta({
                 'lg:w-full': index != expandIndex,
                 'lg:h-72': index != expandIndex,
                 }"
+                sizes="sm:100vw md:34vw lg:50vw"
                 :alt="treatment.coverAlt ?? treatment.title"
                 :img-attrs="{class: 'h-full w-full object-cover'}"
             />
