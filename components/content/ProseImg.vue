@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {pictureProps} from "#image/components/nuxt-picture";
+const {flatUnwrap} = useUnwrap();
 
 const props = defineProps({
   src: {
@@ -23,8 +23,10 @@ const props = defineProps({
     default: undefined
   },
   imgAttrs: {
-    type: String,
-    default: '',
+    type: Object,
+    default: {
+      class: 'object-cover h-full w-full'
+    },
   }
 })
 
@@ -34,7 +36,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <NuxtPicture :src="src" :alt="alt" v-bind="$attrs" :img-attrs="{class: 'object-cover h-full w-full'}" />
+  <NuxtPicture :src="src" :alt="alt" :img-attrs="imgAttrs" v-bind="$attrs" />
 </template>
 
 <style scoped>

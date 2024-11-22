@@ -1,6 +1,6 @@
 ---
 title: Biomechanics
-cover: biomechanics-treadmill.jpg
+cover: biomechanics-sue.avif
 ---
 
 Podiatric biomechanics involves not only the assessment of the structure, alignment and function of the feet and legs
@@ -23,7 +23,7 @@ options.
 
 <div class="grid lg:grid-flow-col lg:gap-5">
 
-![Treadmill](biomechanics-treadmill.jpg "Gait analysis on a treadmill"){
+![Gait analysis on a treadmill](biomechanics-treadmill.avif){
 .lg:h-full .hidden .lg:block .pt-3
 }
 
@@ -31,7 +31,7 @@ options.
 
 ## Gait Analysis
 
-![Treadmill](biomechanics-treadmill.jpg "Gait analysis on a treadmill"){
+![Gait analysis on a treadmill](biomechanics-treadmill.avif){
 .lg:hidden
 }
 
@@ -65,6 +65,13 @@ In-shoe pressure analysis can be arranged by referral to a local university spec
 
 ## Orthosis (orthotics)
 
+![Foam box casting for orthosis](biomechanics-sue-casting.avif){ 
+.inline-block .max-h-72 .w-full .overflow-hidden
+.md:max-h-96
+.lg:float-right .lg:w-1/3 .lg:mx-5 .lg:max-h-full
+:imgAttrs='{"class": "object-cover object-bottom max-h-72 md:max-h-96 lg:max-h-full h-full max-w-full w-full"}'
+}
+
 Orthosis, also referred to as orthotics, often take up to six weeks to adjust the foot function and feel comfortable,
 and are not a quick fix. You should commence wearing for an hour or so a day and gradually increase until you can wear
 them all day. They may need minor adjustments to make them fit correctly.
@@ -83,7 +90,7 @@ These devices will usually last up to a few years before they need to be replace
 a problem or need replacement devices then please contact us for a review.
 
 The casts provided to you can be used to make new orthosis. Additional orthosis can be purchased if you have your casts,
-the price can vary and is listed on our [price list]({% link _pages/about/treatment-plans.md %}).
+the price can vary and is listed on our [treatment plans](/about/treatment-plans/).
 
 Your orthosis will be guaranteed for twelve months from fair wear and tear. Sports orthosis that are used for marathon
 or long distance running can only be guaranteed for six months.
