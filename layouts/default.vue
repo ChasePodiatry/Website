@@ -11,7 +11,7 @@ useSeoMeta({
 
 <template>
   <Base>
-    <LayoutBaseArticle class="container mb-5">
+    <LayoutBaseArticle class="container mb-5 w-full">
       <slot/>
     </LayoutBaseArticle>
   </Base>

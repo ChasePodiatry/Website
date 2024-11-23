@@ -1,7 +1,12 @@
 body:
   - name: Dr. Mark Price
     reg: HCPC CH08762
-    edu: DHSC, MSc, BSc (hons), FCRPod(s), DPodM, MCRPod Consultant Podiatric Surgeon & Independent Prescriber (Director)
+    edu: |
+      BSc(hons), MSc, DrHSc, DPodM, MRCPod, FRCPodS, CSci Director Chase Podiatry Ltd (Clinical Lead).
+      CEO Dynastat Systems Ltd.
+      Consultant Podiatric Surgeon, Practice Plus Group Hospital & Westbourne Centre, Birmingham. Rowley Hall & Beacon Park Hospitals, Stafford. 
+      Senior Lecturer, University of Malta.
+      Chartered Scientist.
   - name: Paul Price
     reg: HCPC CH11207
     edu: DPodM, MCRPod, HCPC, Podiatrist

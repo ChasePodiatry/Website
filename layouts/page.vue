@@ -8,7 +8,7 @@ const {page} = useContent();
 <template>
   <default>
     <LayoutPageTitle />
-    <LayoutPageBody>
+    <LayoutPageBody class="w-full overflow-auto">
       <slot/>
     </LayoutPageBody>
     <footer>

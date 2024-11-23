@@ -13,11 +13,10 @@ Unlike many practices, all of our practitioners are registered with the [Health 
 
 ## Contact Us
 
-<div class="flex flex-col">
+<div class="max-w-full overflow-auto">
 
 | &nbsp;        | Phone    | Email     | Address                                     |
 |---------------|----------|-----------|---------------------------------------------|
 | **Cannock**   | :TelLink | :MailLink | 10 Mill Street <br/> Cannock <br/> WS11 0DL |
 
 </div>
-
