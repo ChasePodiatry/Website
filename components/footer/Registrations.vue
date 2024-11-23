@@ -8,12 +8,12 @@ const sizes = "144px md:234px"
 
 <template>
   <div class="h-32 md:h-52 w-full flex flex-row gap-10 justify-around">
-    <a href="https://rcpod.org.uk/" title="Royal College of Podiatry" target="_blank" rel="external">
+    <NuxtLink href="https://rcpod.org.uk/" title="Royal College of Podiatry" target="_blank" rel="external">
       <NuxtPicture src="rcpod-2024.png" :sizes="sizes" :img-attrs="imgAttrs" alt="Royal College of Podiatry Registered Member 2024"/>
-    </a>
-    <a href="https://www.hcpc-uk.org/" title="Health and Care Professions Council">
+    </NuxtLink>
+    <NuxtLink href="https://www.hcpc-uk.org/" title="Health and Care Professions Council" target="_blank" rel="external">
       <NuxtPicture src="hcpc-logo.png" :sizes="sizes" :img-attrs="imgAttrs" alt="HCPC Registered" />
-    </a>
+    </NuxtLink>
   </div>
 </template>
 

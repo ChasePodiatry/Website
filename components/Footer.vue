@@ -6,7 +6,7 @@ const phone = `tel:+44${config.public.phone.replaceAll(" ", "").substr(1)}`;
 </script>
 
 <template>
-  <footer class="dark:bg-slate-500 dark:shadow-slate-950 pt-5 mt-10">
+  <footer class="dark:bg-slate-500 dark:shadow-slate-950 pt-5">
     <div class="container flex flex-wrap flex-col md:flex-row content-between justify-between mx-auto p-4 gap-10">
       <div class="flex-1 flex flex-wrap">
         <div class="flex-1">

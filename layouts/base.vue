@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Base from "./base.vue";
-
 const {page} = useContent();
 
 useSeoMeta({
@@ -10,11 +8,11 @@ useSeoMeta({
 </script>
 
 <template>
-  <Base>
-    <LayoutBaseArticle class="container mb-5">
-      <slot/>
-    </LayoutBaseArticle>
-  </Base>
+  <header>
+    <NavBar/>
+  </header>
+  <slot />
+  <Footer/>
 </template>
 
 <style scoped>
