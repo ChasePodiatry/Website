@@ -3,7 +3,7 @@ const {page} = useContent();
 </script>
 
 <template>
-  <header>
+  <header v-if="page">
     <h1 class="text-center">
       {{page.title}}
     </h1>

@@ -1,12 +1,26 @@
 <script setup lang="ts">
 
+import Base from "~/layouts/base.vue";
+
 definePageMeta({
-  layout: "page",
+  layout: false,
 })
+
 </script>
 
 <template>
-  <ContentDoc />
+  <ContentDoc>
+    <template v-slot="{ doc }">
+        <LayoutPageLayout>
+          <ContentRenderer :value="doc" />
+        </LayoutPageLayout>
+    </template>
+    <template #not-found>
+      <Base>
+        <NotFound />
+      </Base>
+    </template>
+  </ContentDoc>
 </template>
 
 <style scoped>

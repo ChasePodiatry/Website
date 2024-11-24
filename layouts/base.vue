@@ -2,17 +2,21 @@
 const {page} = useContent();
 
 useSeoMeta({
-  articleModifiedTime: page.value?.updatedAt,
+  articleModifiedTime: page?.value?.updatedAt,
 })
 
 </script>
 
 <template>
-  <header>
-    <NavBar/>
-  </header>
-  <slot />
-  <Footer/>
+  <div class="min-h-screen flex flex-col">
+    <header>
+      <NavBar/>
+    </header>
+    <div class="grow flex flex-col">
+      <slot />
+    </div>
+    <Footer/>
+  </div>
 </template>
 
 <style scoped>

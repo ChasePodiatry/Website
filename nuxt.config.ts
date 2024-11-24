@@ -63,7 +63,7 @@ export default defineNuxtConfig({
             crawlLinks: process.env.NODE_ENV == 'production',
             failOnError: process.env.NODE_ENV == 'production',
             autoSubfolderIndex: true,
-            routes: ['/', '/sitemap.xml'],
+            routes: ['/', '/sitemap.xml', '/404.html'],
             ignore: ['/api/**'],
         },
         cloudflare: {
