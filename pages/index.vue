@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import VueObserveVisibility from "vue3-observe-visibility";
-
 definePageMeta({
   layout: "base",
 })
@@ -84,9 +82,11 @@ const visibiltyObserver = {
           <figcaption :id="logoLabelID" class="sr-only">Chase Podiatry</figcaption>
           <NuxtImg class="w-10/12 md:w-2/3 mx-auto dark:hidden" src="logo.svg"
                    :aria-labelledby="logoLabelID"
+                   data-proofer-ignore
           />
           <NuxtImg class="w-10/12 md:w-2/3 mx-auto hidden dark:inline-block" src="logo-light.svg"
                    :aria-labelledby="logoLabelID"
+                   data-proofer-ignore
           />
         </figure>
       </h1>

@@ -1,5 +1,5 @@
-import VueObserveVisibilityPlugin from "vue3-observe-visibility";
+import ObserveVisibility from "vue3-observe-visibility/src/directives/observe-visibility";
 
 export default defineNuxtPlugin(nuxtApp => {
-    nuxtApp.vueApp.use(VueObserveVisibilityPlugin)
+    nuxtApp.vueApp.directive('observe-visibility', ObserveVisibility)
 })
