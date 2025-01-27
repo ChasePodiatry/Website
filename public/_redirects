@@ -6,3 +6,5 @@
 /biomechanics/gait-anlysis  /biomechanics/
 /biomechanics/orthosis      /biomechanics/
 /treatments/routine-chiropody   /treatments/routine-podiatry/
+
+/security.txt               /.well-known/security.txt
