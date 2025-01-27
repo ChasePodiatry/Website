@@ -71,9 +71,9 @@ We recommend reading this policy fully before you report a vulnerability and are
 
 If you believe you have found a security vulnerability, please submit your report to us:
 
-* call :TelLink:;
-* email :MailLink: (contact us for our public encryption key); or
-* write to us at :StreetAddress:
+* call :TelLink;
+* email :MailLink (contact us for our public encryption key); or
+* write to us at :StreetAddress.
 
 In your report please include details of:
 
