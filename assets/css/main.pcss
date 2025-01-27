@@ -43,10 +43,6 @@
 
     .flex-col {
         table {
-            thead {
-                @apply hidden;
-            }
-
             tr {
                 @apply w-full;
             }
@@ -54,6 +50,7 @@
     }
 
     table {
+        @apply w-full;
 
         thead {
             @apply font-bold;
@@ -65,18 +62,6 @@
             @apply dark:border-slate-600/20;
         }
 
-        &.striped {
-            thead {
-                @apply bg-slate-200;
-                @apply dark:bg-slate-900;
-            }
-
-            tr:nth-child(even) {
-                @apply bg-slate-100;
-                @apply dark:bg-slate-900;
-            }
-        }
-
         &:not(.flex-col) {
             td {
                 @apply p-2;
@@ -86,6 +71,26 @@
         &.flex-col {
             tr {
                 @apply p-2;
+            }
+        }
+    }
+
+    .striped > table, table.striped {
+        thead {
+            @apply bg-slate-200;
+            @apply dark:bg-slate-900;
+        }
+
+        tr:nth-child(even) {
+            @apply bg-slate-100;
+            @apply dark:bg-slate-900;
+        }
+    }
+
+    .table-vertical {
+        table {
+            tr {
+                @apply flex flex-col;
             }
         }
     }

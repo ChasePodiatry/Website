@@ -13,10 +13,11 @@ Unlike many practices, all of our practitioners are registered with the [Health 
 
 ## Contact Us
 
-<div class="max-w-full overflow-auto">
+<div class="max-w-full overflow-auto max-md:table-vertical striped">
 
-| &nbsp;        | Phone    | Email     | Address                                     |
-|---------------|----------|-----------|---------------------------------------------|
-| **Cannock**   | :TelLink | :MailLink | 10 Mill Street <br/> Cannock <br/> WS11 0DL |
+| &nbsp;        | Phone    | Email     | Address                                                                    |
+|---------------|----------|-----------|----------------------------------------------------------------------------|
+| **Cannock**   | :TelLink | :MailLink | 10 Mill Street <br/> Cannock <br/> WS11 0DL                                |
+| **Burntwood** | :TelLink | :MailLink | Burntwood Shopping Centre <br/> Cannock Road </br> Burntwood </br> WS7 1JR |
 
 </div>
