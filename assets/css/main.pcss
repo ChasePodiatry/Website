@@ -1,0 +1,97 @@
+@import "_typography.pcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-sans;
+        @apply text-lg;
+    }
+
+    body {
+        @apply bg-slate-200 text-black;
+        @apply dark:bg-slate-700 dark:text-white;
+    }
+
+    a {
+        @apply md:hover:text-chase-blue-700 md:dark:hover:text-chase-blue-500;
+    }
+
+    article {
+        ul {
+            @apply list-disc list-outside pl-5 md:pl-10;
+        }
+
+        ol {
+            @apply list-decimal list-outside pl-5 md:pl-10;
+        }
+    }
+
+    address {
+        font-style: normal;
+    }
+}
+
+@layer components {
+    nav {
+        a.router-link-active {
+            @apply text-chase-blue-700 dark:text-chase-blue-400
+        }
+    }
+
+    .flex-col {
+        table {
+            tr {
+                @apply w-full;
+            }
+        }
+    }
+
+    table {
+        @apply w-full;
+
+        thead {
+            @apply font-bold;
+        }
+
+        tr {
+            @apply border-2;
+            @apply border-slate-200/20;
+            @apply dark:border-slate-600/20;
+        }
+
+        &:not(.flex-col) {
+            td {
+                @apply p-2;
+            }
+        }
+
+        &.flex-col {
+            tr {
+                @apply p-2;
+            }
+        }
+    }
+
+    .striped > table, table.striped {
+        thead {
+            @apply bg-slate-200;
+            @apply dark:bg-slate-900;
+        }
+
+        tr:nth-child(even) {
+            @apply bg-slate-100;
+            @apply dark:bg-slate-900;
+        }
+    }
+
+    .table-vertical {
+        table {
+            tr {
+                @apply flex flex-col;
+            }
+        }
+    }
+}

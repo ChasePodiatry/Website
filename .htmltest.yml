@@ -1,3 +1,1 @@
-DirectoryPath: _site
-IgnoreURLs:
-  - http://www.addthis.com/privacy
+DirectoryPath: "dist"
