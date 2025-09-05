@@ -53,13 +53,13 @@ body:
   -
 
   - name: Domiciliary (home) visit
-    price: £42.00
+    price: £50.00
   - name: Domiciliary & mileage
-    price: £47.00
+    price: £55.00
   - name: Domiciliary couple
-    price: £72.00
+    price: £90.00
   - name: Domiciliary couple & mileage
-    price: £77.00
+    price: £100.00
 
   -
 
