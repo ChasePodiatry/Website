@@ -53,12 +53,20 @@ body:
   -
 
   - name: Domiciliary (home) visit
-    price: £50.00
+    price: £42.00
   - name: Domiciliary & mileage
-    price: £55.00
+    price: £47.00
   - name: Domiciliary couple
-    price: £90.00
+    price: £72.00
   - name: Domiciliary couple & mileage
+    price: £77.00
+  - name: New patient domiciliary (home) visit
+    price: £50.00
+  - name: New patient domiciliary & mileage
+    price: £55.00
+  - name: New patient domiciliary couple
+    price: £90.00
+  - name: New patient domiciliary couple & mileage
     price: £100.00
 
   -
