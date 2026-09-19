@@ -4,27 +4,40 @@ const priceData = await queryContent('/about/prices').findOne();
 
 <template>
   <table class="w-full mt-5 striped">
-    <thead>
-    <tr>
-      <td>Treatment</td>
-      <td>Price</td>
-    </tr>
-    </thead>
     <tbody>
-    <tr v-for="treatment in priceData.body">
+    <tr>
+      <td>
+        <strong>General assessment and treatment</strong>
+        <p>
+          All new patients will have approximately 30-minute appointment for assessment of medical risk in relation to
+          foot health and history of foot condition. Initial treatment is included where appropriate.
+        </p>
+      </td>
+      <td class="font-bold content-start text-center text-nowrap">New patient</td>
+      <td class="font-bold content-start text-center text-nowrap">Routine care <br/> or follow up</td>
+    </tr>
+    <tr v-for="treatment in priceData.items">
       <template v-if="treatment">
       <td>
-        <MDC :value="treatment.name" class="font-bold"/>
+        <MDC class="font-bold" :value="treatment.name"/>
         <MDC :value="treatment.description" v-if="treatment.description"/>
       </td>
-      <td>
-        <MDC :value="treatment.price" v-if="treatment.price"/>
-      </td>
+      <template v-if="treatment.new && treatment.routine">
+        <td class="text-center"><MDC :value="treatment.new" /></td>
+        <td class="text-center"><MDC :value="treatment.routine" /></td>
       </template>
       <template v-else>
-        <td colspan="2">&nbsp;</td>
+        <td colspan="2" class="text-center"><MDC :value="treatment.price" /></td>
+      </template>
+      </template>
+      <template v-else>
+        <td colspan="3">&nbsp;</td>
       </template>
     </tr>
+
+<!--    <tr>-->
+<!--      <td colspan="3" class="!p-0 h-0"><hr/></td>-->
+<!--    </tr>-->
     </tbody>
   </table>
 </template>
